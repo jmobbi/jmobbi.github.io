@@ -1,14 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="149.167px" height="172.243px" viewBox="0 0 149.167 172.243" enable-background="new 0 0 149.167 172.243"
-	 xml:space="preserve">
-<polygon fill="#585858" points="149.167,129.183 74.583,172.243 0,129.183 0,43.061 74.583,0 149.167,43.061 "/>
-<path fill="#FFFFFF" d="M41.88,84.75l25.09,26.783L54.889,84.75H41.88z M74.583,115.841L88.64,84.75H60.527L74.583,115.841z
-	 M55.009,79.594l8.217-15.466H52.673l-11.6,15.466H55.009z M82.196,111.533l25.091-26.783h-13.01L82.196,111.533z M60.849,79.594
-	h27.469l-8.217-15.466H69.065L60.849,79.594z M94.157,79.594h13.936L96.494,64.128H85.942L94.157,79.594z M99.835,60.02
-	l15.467,20.621c0.376,0.483,0.55,1.04,0.523,1.671c-0.027,0.632-0.257,1.174-0.686,1.632l-38.664,41.243
-	c-0.483,0.536-1.113,0.804-1.893,0.804c-0.778,0-1.408-0.268-1.892-0.804L34.026,83.944c-0.429-0.457-0.658-1-0.685-1.632
-	c-0.027-0.631,0.147-1.188,0.523-1.671L49.331,60.02c0.484-0.699,1.168-1.047,2.054-1.047h46.398
-	C98.667,58.973,99.353,59.322,99.835,60.02z"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400" height="1400" viewBox="0 0 1400 1400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="45.094" y="45.156" width="1309.816" height="1309.684" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#585858"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="255.75" y="339.188" width="887.31" height="720.002" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="circle" class="cls-1" cx="700.002" cy="699.998" r="654.908"/>
+  <path id="JM" class="cls-2" d="M380.964,487.179c42.537,0,81.864-24.8,81.864-73.6,0-49.6-39.327-74.4-81.864-74.4s-81.864,24.8-81.864,74.4C299.1,462.379,338.427,487.179,380.964,487.179Zm73.838,39.2H309.534v335.2c0,50.4-8.026,76-53.773,100l28.893,97.6c130.821-28,170.148-92.8,170.148-197.6V526.38Zm219.565,0H529.1v389.6H674.367v-227.2c17.657-20,36.117-32.8,55.379-32.8,23.275,0,34.511,16,34.511,53.6v206.4H909.525v-228c20.065-22.4,37.722-32,54.576-32,23.275,0,33.709,16,33.709,53.6v206.4h145.27v-248c0-105.6-32.11-148-112.36-148-40.133,0-76.25,15.2-131.628,66.4-15.25-46.4-48.155-66.4-102.731-66.4-43.34,0-77.851,18.4-121.994,59.2v-52.8Z"/>
 </svg>
