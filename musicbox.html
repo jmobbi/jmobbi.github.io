@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Musicbox | Jmobbi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Jmobbi</strong></a>
+								</header>
+
+							<!-- Content -->
+								<section>
+								    <header class="main">
+								        <h1>Musicbox: The Ultimate Music Player for Dropbox</h1>
+								    </header>
+    
+								    <div id="app-screenshots" class="screenshots box">
+								        <!-- Screenshots will be dynamically loaded here -->
+								    </div>
+
+								    <script>
+								        async function loadScreenshots(appId) {
+								            try {
+								                const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
+								                const response = await fetch(apiUrl);
+								                const data = await response.json();
+
+								                if (data.resultCount > 0) {
+								                    const screenshots = data.results[0].screenshotUrls.slice(0, 5); // Get the first 5 screenshots
+								                    const screenshotContainer = document.getElementById("app-screenshots");
+
+								                    screenshots.forEach((url) => {
+								                        const imgElement = document.createElement("img");
+								                        imgElement.src = url;
+								                        imgElement.alt = "App Screenshot";
+								                        imgElement.classList.add("screenshot");
+								                        screenshotContainer.appendChild(imgElement);
+								                    });
+								                } else {
+								                    console.error("No results found for the specified app ID.");
+								                }
+								            } catch (error) {
+								                console.error("Error fetching app data:", error);
+								            }
+								        }
+
+								        // Call the function with the specific app ID for Musicbox
+								        loadScreenshots(1212543936);
+								    </script>
+
+								    <style>
+								        .screenshots {
+								            display: flex;
+								            flex-wrap: wrap;
+								            gap: 10px;
+								            justify-content: center;
+								        }
+
+								        .screenshot {
+								            width: 200px;
+								            border-radius: 10px;
+								            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+								        }
+								    </style>
+
+								    <br>
+
+								    <p>Introducing Musicbox, your ultimate music player for Dropbox. Designed for iOS and macOS, Musicbox allows you to listen to music directly from your Dropbox account with powerful features like offline playback, equalizer customization, and seamless playlist management.</p>
+
+								    <h2>Download Music from Dropbox</h2>
+								    <p>With Musicbox, easily download your favorite songs from Dropbox for offline playback. Perfect for commutes, flights, or when you’re in areas with limited connectivity.</p>
+
+								    <h2>Offline Player for Dropbox</h2>
+								    <p>Access your music anytime, anywhere, without an internet connection. Musicbox makes it simple to download and store tracks for offline use.</p>
+
+								    <h2>Equalizer for Dropbox Music</h2>
+								    <p>Enhance your listening experience with Musicbox's built-in audio equalizer and bass booster. Customize the sound of your Dropbox music to suit your preferences and enjoy every beat.</p>
+
+								    <h2>Listen to Music from Dropbox</h2>
+								    <p>Stream your Dropbox music directly through Musicbox. The app integrates seamlessly with Dropbox, offering smooth playback and a user-friendly interface.</p>
+
+								    <h2>Playlists for Dropbox</h2>
+								    <p>Create and manage custom playlists for your Dropbox music. Organize songs by mood, genre, or occasion, and keep your collection perfectly curated.</p>
+
+								    <h2>Universal Audio Support</h2>
+								    <p>Musicbox supports a wide variety of audio formats, including MP3, FLAC, AAC, M4A, WAV, AIFF, and M4R. Enjoy seamless playback without worrying about compatibility.</p>
+
+								    <h2>Audio Bookmarks</h2>
+								    <p>Save your place in audiobooks, podcasts, or long tracks with Musicbox's audio bookmarks feature. Resume listening exactly where you left off.</p>
+
+								    <h2>Playback Speed Control</h2>
+								    <p>Adjust playback speed to match your preferences. Whether you want to speed up a podcast or slow down a favorite track, Musicbox gives you complete control.</p>
+
+								    <h2>Sleep Timer</h2>
+								    <p>Drift off to sleep while listening to your favorite music. Set a sleep timer, and Musicbox will automatically stop playback at your chosen time.</p>
+
+								    <h2>Background Playback</h2>
+								    <p>Keep your music playing while you use other apps or when your device is locked. Musicbox ensures uninterrupted playback for a seamless experience.</p>
+
+								    <h2>File Manager</h2>
+								    <p>Organize and manage your audio files with the built-in file manager. Easily move, rename, or delete files within the app.</p>
+
+								    <h2>Advanced Search</h2>
+								    <p>Quickly locate your favorite tracks, albums, or artists with the advanced search feature. Musicbox makes finding music effortless.</p>
+
+								    <h2>Download Musicbox Now</h2>
+								    <p>Unlock the full potential of your Dropbox music library with Musicbox. Download the app today and experience the ultimate combination of convenience and high-quality audio playback.</p>
+
+								    <div class="actions">
+								        <!-- Button for iOS App Store -->
+								        <a href="https://apps.apple.com/app/id1212543936" class="button primary icon fa-download">
+								            Download for iOS
+								        </a>
+								    </div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li>
+											<span class="opener">Our Apps</span>
+											<ul>
+												<li><a href="musicbox.html">Musicbox</a></li>
+												<li><a href="goplayer.html">GoPlayer</a></li>
+												<li><a href="mplayer.html">MPlayer</a></li>
+												<li><a href="yaplayer.html">YaPlayer</a></li>
+												<li><a href="fireplayer.html">FirePlayer</a></li>
+												<li><a href="exchange.html">Exchange Converter</a></li>
+											</ul>
+										</li>
+										<li><a href="privacy_policy.html">Privacy Policy</a></li>
+										<li><a href="terms.html">Terms and Conditions</a></li>
+										<li><a href="support.html">Support</a></li>
+									</ul>
+								</nav>
+
+		
+							<!-- Section -->
+							<section>
+							    <header class="major">
+							        <h2>Get in Touch</h2>
+							    </header>
+							    <p>If you have any questions, feedback, or need assistance, we're here to help! Feel free to reach out to us via email, and we'll get back to you as soon as possible.</p>
+							    <ul class="contact">
+							        <li class="icon solid fa-envelope"><a href="mailto:support@jmobbi.com">support@jmobbi.com</a></li>
+							    </ul>
+							</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Jmobbi. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
