@@ -15,8 +15,8 @@
 	    // Function to fetch artwork URL for a specific app ID
 	    async function fetchAppIcon(appId) {
 	        try {
-	            const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
-	            const response = await fetch(apiUrl);
+				const apiUrl = `https://cors-anywhere.herokuapp.com/https://itunes.apple.com/lookup?id=${appId}`;
+           	 	const response = await fetch(apiUrl);
 	            const data = await response.json();
 
 	            if (data.resultCount > 0) {
