@@ -11,6 +11,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+    <script>
+           // Language Detection and Switching
+           document.addEventListener("DOMContentLoaded", function () {
+               const userLang = navigator.language || navigator.userLanguage;
+               const contentEn = document.getElementById("content-en");
+               const contentRu = document.getElementById("content-ru");
+
+               if (userLang.startsWith("ru")) {
+                   contentEn.style.display = "none";
+                   contentRu.style.display = "block";
+               } else {
+                   contentEn.style.display = "block";
+                   contentRu.style.display = "none";
+               }
+           });
+       </script>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -27,108 +43,170 @@
 
 							<!-- Content -->
 								<section>
-								    <header class="main">
-								        <h1>YaPlayer: Cloud Music Player and Downloader for Yandex.Disk</h1>
-								    </header>
-    
-								    <div id="app-screenshots" class="screenshots box">
-								        <!-- Screenshots will be dynamically loaded here -->
-								    </div>
+				                    <!-- English Content -->
+				                    <div id="content-en" style="display: none;">
+				                        <header class="main">
+				                            <h1>YaPlayer: Cloud Music Player and Downloader for Yandex.Disk</h1>
+				                        </header>
 
-								    <script>
-								        async function loadScreenshots(appId) {
-								            try {
-								                const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
-								                const response = await fetch(apiUrl);
-								                const data = await response.json();
+				                        <div id="app-screenshots" class="screenshots box">
+				                            <!-- Screenshots will be dynamically loaded here -->
+				                        </div>
+										
+										 <br>
 
-								                if (data.resultCount > 0) {
-								                    const screenshots = data.results[0].screenshotUrls.slice(0, 5); // Load the first 5 screenshots
-								                    const screenshotContainer = document.getElementById("app-screenshots");
+				                        <p>Introducing YaPlayer, the ultimate music player for Yandex.Disk. Stream and download your music with ease, enjoy advanced features like an equalizer and playlists, and manage your Yandex.Disk library seamlessly. YaPlayer is your all-in-one solution for enjoying music on the go or offline.</p>
 
-								                    screenshots.forEach((url) => {
-								                        const imgElement = document.createElement("img");
-								                        imgElement.src = url;
-								                        imgElement.alt = "App Screenshot";
-								                        imgElement.classList.add("screenshot");
-								                        screenshotContainer.appendChild(imgElement);
-								                    });
-								                } else {
-								                    console.error("No results found for the specified app ID.");
-								                }
-								            } catch (error) {
-								                console.error("Error fetching app data:", error);
-								            }
-								        }
+				                        <h2>Offline Player for Yandex.Disk</h2>
+				                        <p>Download your favorite music directly from Yandex.Disk and listen to it offline. Whether you’re traveling, commuting, or in areas with no internet access, YaPlayer ensures your music is always with you.</p>
 
-								        // Load screenshots for YaPlayer
-								        loadScreenshots(1103650450);
-								    </script>
+				                        <h2>Equalizer for Yandex.Disk</h2>
+				                        <p>Fine-tune your sound with YaPlayer’s built-in audio equalizer. Adjust bass, treble, and other frequencies to create a personalized listening experience. Whether you want to enhance beats or balance audio for podcasts, the equalizer delivers exceptional sound quality.</p>
 
-								    <style>
-								        .screenshots {
-								            display: flex;
-								            flex-wrap: wrap;
-								            gap: 10px;
-								            justify-content: center;
-								        }
+				                        <h2>Listen to Music from Yandex.Disk</h2>
+				                        <p>Stream your music directly from Yandex.Disk without any hassle. YaPlayer’s intuitive interface makes accessing your cloud-stored tracks simple and enjoyable.</p>
 
-								        .screenshot {
-								            width: 200px;
-								            border-radius: 10px;
-								            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-								        }
-								    </style>
+				                        <h2>Playlists for Yandex.Disk</h2>
+				                        <p>Organize your music collection with custom playlists. Easily group your songs by mood, genre, or event, ensuring a personalized and enjoyable listening experience.</p>
 
-								    <br>
+				                        <h2>Universal Audio Support</h2>
+				                        <p>YaPlayer supports a wide range of audio formats, including MP3, FLAC, AAC, M4A, WAV, AIFF, and M4R. No matter your file type, YaPlayer guarantees smooth playback with no need for conversion.</p>
 
-								    <p>Introducing YaPlayer, the ultimate music player for Yandex.Disk. Stream and download your music with ease, enjoy advanced features like an equalizer and playlists, and manage your Yandex.Disk library seamlessly. YaPlayer is your all-in-one solution for enjoying music on the go or offline.</p>
+				                        <h2>Audio Bookmarks</h2>
+				                        <p>Mark your place in podcasts or audiobooks with YaPlayer’s audio bookmarks. Resume your listening experience right where you left off, every time.</p>
 
-								    <h2>Offline Player for Yandex.Disk</h2>
-								    <p>Download your favorite music directly from Yandex.Disk and listen to it offline. Whether you’re traveling, commuting, or in areas with no internet access, YaPlayer ensures your music is always with you.</p>
+				                        <h2>Playback Speed Control</h2>
+				                        <p>Adjust playback speed to suit your needs. Slow down for detailed listening or speed up to save time. Perfect for podcasts, audiobooks, and lectures.</p>
 
-								    <h2>Equalizer for Yandex.Disk</h2>
-								    <p>Fine-tune your sound with YaPlayer’s built-in audio equalizer. Adjust bass, treble, and other frequencies to create a personalized listening experience. Whether you want to enhance beats or balance audio for podcasts, the equalizer delivers exceptional sound quality.</p>
+				                        <h2>Sleep Timer</h2>
+				                        <p>Fall asleep to your favorite music using YaPlayer’s sleep timer. Set it, relax, and let the app stop playback automatically, ensuring a smooth and uninterrupted sleep.</p>
 
-								    <h2>Listen to Music from Yandex.Disk</h2>
-								    <p>Stream your music directly from Yandex.Disk without any hassle. YaPlayer’s intuitive interface makes accessing your cloud-stored tracks simple and enjoyable.</p>
+				                        <h2>Background Playback</h2>
+				                        <p>Continue enjoying your music while using other apps or when your device is locked. YaPlayer ensures seamless background playback for an uninterrupted experience.</p>
 
-								    <h2>Playlists for Yandex.Disk</h2>
-								    <p>Organize your music collection with custom playlists. Easily group your songs by mood, genre, or event, ensuring a personalized and enjoyable listening experience.</p>
+				                        <h2>File Manager</h2>
+				                        <p>Keep your Yandex.Disk music library organized with YaPlayer’s integrated file manager. Easily rename, move, and manage your files directly within the app.</p>
 
-								    <h2>Universal Audio Support</h2>
-								    <p>YaPlayer supports a wide range of audio formats, including MP3, FLAC, AAC, M4A, WAV, AIFF, and M4R. No matter your file type, YaPlayer guarantees smooth playback with no need for conversion.</p>
+				                        <h2>Advanced Search</h2>
+				                        <p>Find your tracks, albums, or artists in seconds with YaPlayer’s powerful search tool. Save time and get to your music faster with intelligent search capabilities.</p>
 
-								    <h2>Audio Bookmarks</h2>
-								    <p>Mark your place in podcasts or audiobooks with YaPlayer’s audio bookmarks. Resume your listening experience right where you left off, every time.</p>
+				                        <h2>Download YaPlayer Now</h2>
+				                        <p>Revolutionize your Yandex.Disk music experience with YaPlayer. Download today and enjoy the ultimate blend of convenience, power, and versatility.</p>
+										
+									    <div class="actions">
+									        <!-- Button for iOS App Store -->
+									        <a href="https://apps.apple.com/app/id1103650450" class="button primary icon fa-download" style="margin-right: 20px;">
+									            Download for iOS
+									        </a>
+									    </div>
+										
+				                    </div>
 
-								    <h2>Playback Speed Control</h2>
-								    <p>Adjust playback speed to suit your needs. Slow down for detailed listening or speed up to save time. Perfect for podcasts, audiobooks, and lectures.</p>
+				                    <!-- Russian Content -->
+				                    <div id="content-ru" style="display: none;">
+				                        <header class="main">
+				                            <h1>YaPlayer: Облачный музыкальный проигрыватель и загрузчик для Яндекс.Диск</h1>
+				                        </header>
 
-								    <h2>Sleep Timer</h2>
-								    <p>Fall asleep to your favorite music using YaPlayer’s sleep timer. Set it, relax, and let the app stop playback automatically, ensuring a smooth and uninterrupted sleep.</p>
+				                        <div id="app-screenshots" class="screenshots box">
+				                            <!-- Screenshots will be dynamically loaded here -->
+				                        </div>
+										
+										 <br>
 
-								    <h2>Background Playback</h2>
-								    <p>Continue enjoying your music while using other apps or when your device is locked. YaPlayer ensures seamless background playback for an uninterrupted experience.</p>
+				                        <p>Представляем YaPlayer — лучший музыкальный проигрыватель для Яндекс.Диск. Потоковое воспроизведение и загрузка музыки с удобством, расширенные функции, такие как эквалайзер и плейлисты, и управление библиотекой находящейся на Яндекс.Диск. YaPlayer — это универсальное решение для наслаждения музыкой в дороге или офлайн.</p>
 
-								    <h2>File Manager</h2>
-								    <p>Keep your Yandex.Disk music library organized with YaPlayer’s integrated file manager. Easily rename, move, and manage your files directly within the app.</p>
+				                        <h2>Офлайн-плеер для Яндекс.Диск</h2>
+				                        <p>Загружайте любимую музыку с Яндекс.Диск и слушайте её офлайн. Независимо от того, путешествуете ли вы, находитесь в пути или в зоне без интернета, YaPlayer всегда обеспечивает доступность вашей музыки.</p>
 
-								    <h2>Advanced Search</h2>
-								    <p>Find your tracks, albums, or artists in seconds with YaPlayer’s powerful search tool. Save time and get to your music faster with intelligent search capabilities.</p>
+				                        <h2>Эквалайзер для Яндекс.Диск</h2>
+				                        <p>Настройте звук с помощью встроенного аудиоэквалайзера. Регулируйте басы, высокие частоты и другие параметры, чтобы создать персонализированный опыт. Эквалайзер обеспечивает исключительное качество звука.</p>
 
-								    <h2>Universal App</h2>
-								    <p>YaPlayer is optimized for both iOS and macOS, offering a unified music experience across devices. Whether streaming from Yandex.Disk or enjoying offline playback, YaPlayer is built for your convenience.</p>
+				                        <h2>Слушайте музыку с Яндекс.Диск</h2>
+				                        <p>Воспроизводите музыку прямо с Яндекс.Диск без лишних усилий. Интуитивно понятный интерфейс YaPlayer делает доступ к трекам из облачного хранилища простым и удобным.</p>
 
-								    <h2>Download YaPlayer Now</h2>
-								    <p>Revolutionize your Yandex.Disk music experience with YaPlayer. Download today and enjoy the ultimate blend of convenience, power, and versatility.</p>
+				                        <h2>Плейлисты для Яндекс.Диск</h2>
+				                        <p>Организуйте свою музыкальную коллекцию с помощью пользовательских плейлистов. Легко группируйте песни по настроению, жанру или событию для приятного прослушивания.</p>
 
-								    <div class="actions">
-								        <!-- Button for iOS App Store -->
-								        <a href="https://apps.apple.com/app/id1103650450" class="button primary icon fa-download" style="margin-right: 20px;">
-								            Download for iOS
-								        </a>
-								    </div>
+				                        <h2>Универсальная поддержка аудио</h2>
+				                        <p>YaPlayer поддерживает широкий спектр аудиоформатов, включая MP3, FLAC, AAC, M4A, WAV, AIFF и M4R. Независимо от типа файла, YaPlayer гарантирует плавное воспроизведение без необходимости конвертации.</p>
+
+				                        <h2>Аудиозакладки</h2>
+				                        <p>Помечайте место в подкастах или аудиокнигах с помощью аудиозакладок YaPlayer. Возобновляйте прослушивание именно с того момента, на котором остановились.</p>
+
+				                        <h2>Контроль скорости воспроизведения</h2>
+				                        <p>Регулируйте скорость воспроизведения под свои нужды. Замедляйте для детального прослушивания или ускоряйте для экономии времени. Идеально для подкастов, аудиокниг и лекций.</p>
+
+				                        <h2>Таймер сна</h2>
+				                        <p>Засыпайте под любимую музыку, используя таймер сна YaPlayer. Установите его, расслабьтесь, и приложение автоматически остановит воспроизведение, обеспечив вам спокойный сон.</p>
+
+				                        <h2>Фоновое воспроизведение</h2>
+				                        <p>Продолжайте наслаждаться музыкой, используя другие приложения или когда устройство заблокировано. YaPlayer обеспечивает плавное фоновое воспроизведение.</p>
+
+				                        <h2>Файловый менеджер</h2>
+				                        <p>Организуйте библиотеку музыки Яндекс.Диск с помощью интегрированного файлового менеджера. Легко переименовывайте, перемещайте и управляйте файлами прямо в приложении.</p>
+
+				                        <h2>Расширенный поиск</h2>
+				                        <p>Находите треки, альбомы или исполнителей за секунды с помощью мощного инструмента поиска. Экономьте время и быстрее находите свою музыку благодаря интеллектуальному поиску.</p>
+
+				                        <h2>Скачайте YaPlayer сейчас</h2>
+				                        <p>Улучшайте свой музыкальный опыт с Яндекс.Диск с помощью YaPlayer. Скачайте сегодня и наслаждайтесь идеальным сочетанием удобства, мощности и универсальности.</p>
+										
+									    <div class="actions">
+									        <!-- Button for iOS App Store -->
+									        <a href="https://apps.apple.com/app/id1103650450" class="button primary icon fa-download" style="margin-right: 20px;">
+									             Скачать для iOS
+									        </a>
+									    </div>
+										
+				                    </div>
+
+									<!-- Screenshots Loader Script -->
+				                    <script>
+				                        async function loadScreenshots(appId) {
+				                            try {
+				                                const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
+				                                const response = await fetch(apiUrl);
+				                                const data = await response.json();
+
+				                                if (data.resultCount > 0) {
+				                                    const screenshots = data.results[0].screenshotUrls.slice(0, 5); // Load the first 5 screenshots
+				                                    const screenshotContainer = document.getElementById("app-screenshots");
+
+				                                    screenshots.forEach((url) => {
+				                                        const imgElement = document.createElement("img");
+				                                        imgElement.src = url;
+				                                        imgElement.alt = "App Screenshot";
+				                                        imgElement.classList.add("screenshot");
+				                                        screenshotContainer.appendChild(imgElement);
+				                                    });
+				                                } else {
+				                                    console.error("No results found for the specified app ID.");
+				                                }
+				                            } catch (error) {
+				                                console.error("Error fetching app data:", error);
+				                            }
+				                        }
+
+				                        // Load screenshots for YaPlayer
+				                        loadScreenshots(1103650450);
+				                    </script>
+
+				                    <style>
+				                        .screenshots {
+				                            display: flex;
+				                            flex-wrap: wrap;
+				                            gap: 10px;
+				                            justify-content: center;
+				                        }
+
+				                        .screenshot {
+				                            width: 200px;
+				                            border-radius: 10px;
+				                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+				                        }
+				                    </style>
+
 								</section>
 
 						</div>
