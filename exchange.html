@@ -5,183 +5,230 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Exchange Converter | Jmobbi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Exchange Converter | Jmobbi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+<body class="is-preload">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Jmobbi</strong></a>
-								</header>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Content -->
-								<section>
-								    <header class="main">
-								        <h1>Exchange Converter Calculator: Your Ultimate Currency Tool</h1>
-								    </header>
-    
-								    <div id="app-screenshots" class="screenshots box">
-								        <!-- Screenshots will be dynamically loaded here -->
-								    </div>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
 
-								    <script>
-								        async function loadScreenshots(appId) {
-								            try {
-								                const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
-								                const response = await fetch(apiUrl);
-								                const data = await response.json();
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><strong>Jmobbi</strong></a>
+				</header>
 
-								                if (data.resultCount > 0) {
-								                    const screenshots = data.results[0].screenshotUrls.slice(0, 5);
-								                    const screenshotContainer = document.getElementById("app-screenshots");
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h1>Exchange Converter Calculator: Your Ultimate Currency Tool</h1>
+					</header>
 
-								                    screenshots.forEach((url) => {
-								                        const imgElement = document.createElement("img");
-								                        imgElement.src = url;
-								                        imgElement.alt = "App Screenshot";
-								                        imgElement.classList.add("screenshot");
-								                        screenshotContainer.appendChild(imgElement);
-								                    });
-								                } else {
-								                    console.error("No results found for the specified app ID.");
-								                }
-								            } catch (error) {
-								                console.error("Error fetching app data:", error);
-								            }
-								        }
-
-								        // Load screenshots for Exchange Converter Calculator
-								        loadScreenshots(6480405624);
-								    </script>
-
-								    <style>
-								        .screenshots {
-								            display: flex;
-								            flex-wrap: wrap;
-								            gap: 10px;
-								            justify-content: center;
-								        }
-
-								        .screenshot {
-								            width: 200px;
-								            border-radius: 10px;
-								            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-								        }
-								    </style>
-
-								    <br>
-
-								    <p>The Exchange Converter Calculator is the most intuitive, fast, and reliable currency exchange app designed for iOS. Whether you’re planning a trip, managing international finances, or simply staying informed, this app has everything you need to convert and calculate with confidence.</p>
-
-								    <h2>Real-Time Currency Exchange Rates</h2>
-								    <p>Stay updated with real-time exchange rates for over 160 global currencies. With data refreshed hourly, you’ll always have the most accurate and reliable rates at your fingertips, ensuring peace of mind for all your financial transactions.</p>
-
-								    <h2>Instant Currency Conversion</h2>
-								    <p>Convert between your chosen currencies instantly. Input amounts and get precise results with a clean, user-friendly interface, making it perfect for quick calculations while traveling or shopping internationally.</p>
-
-								    <h2>Offline Currency Calculator</h2>
-								    <p>Even without an internet connection, the Exchange Converter Calculator has you covered. It stores the last updated rates, allowing you to perform offline calculations wherever you are—ideal for flights, remote locations, or areas with poor connectivity.</p>
-
-								    <h2>Search Functionality</h2>
-								    <p>Easily find currencies with the integrated search feature. Search by currency code or name to quickly locate the exact rates you need, saving time and hassle.</p>
-
-								    <h2>Favorites List</h2>
-								    <p>Keep your frequently used currencies in one place with the Favorites List. Add your preferred currency pairs for quicker access and seamless conversion, tailored to your daily needs.</p>
-
-								    <h2>Batch Currency Conversion</h2>
-								    <p>Save time by converting amounts across multiple currencies in a single operation. Perfect for multi-country trips or financial planning, this feature makes managing international transactions effortless.</p>
-
-								    <h2>Regular Updates</h2>
-								    <p>Exchange rates are updated hourly to reflect the latest market data. For ultimate convenience, the app refreshes automatically upon startup, ensuring you always have the latest information.</p>
-
-								    <h2>Smart Offline Features</h2>
-								    <p>When starting offline, the app intelligently defaults to the last known rates, ensuring you never have to guess or rely on outdated data. A manual refresh option is also available for those who prefer greater control.</p>
-
-								    <h2>Seamless Usability</h2>
-								    <p>The app’s user-friendly interface and straightforward functionality make currency conversion easy for everyone, whether you’re a traveler, a businessperson, or someone managing international payments.</p>
-
-								    <h2>Download Now</h2>
-								    <p>Transform the way you handle currency exchange with the Exchange Converter Calculator. Download now and experience the convenience of accurate, real-time conversions, offline calculations, and intuitive design. It’s the perfect companion for travel, business, and everyday life.</p>
-
-								    <div class="actions">
-								        <!-- Button for iOS App Store -->
-								        <a href="https://apps.apple.com/app/id6480405624" class="button primary icon fa-download">
-								            Download for iOS
-								        </a>
-								    </div>
-								</section>
-
-						</div>
+					<div id="app-screenshots" class="screenshots box">
+						<!-- Screenshots will be dynamically loaded here -->
 					</div>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+					<script>
+						async function loadScreenshots(appId) {
+							try {
+								const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
+								const response = await fetch(apiUrl);
+								const data = await response.json();
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li>
-											<span class="opener">Our Apps</span>
-											<ul>
-												<li><a href="musicbox.html">Musicbox</a></li>
-												<li><a href="goplayer.html">GoPlayer</a></li>
-												<li><a href="mplayer.html">MPlayer</a></li>
-												<li><a href="yaplayer.html">YaPlayer</a></li>
-												<li><a href="fireplayer.html">FirePlayer</a></li>
-												<li><a href="exchange.html">Exchange Converter</a></li>
-											</ul>
-										</li>
-										<li><a href="privacy_policy.html">Privacy Policy</a></li>
-										<li><a href="terms.html">Terms and Conditions</a></li>
-										<li><a href="support.html">Support</a></li>
-									</ul>
-								</nav>
+								if (data.resultCount > 0) {
+									const screenshots = data.results[0].screenshotUrls.slice(0, 5);
+									const screenshotContainer = document.getElementById("app-screenshots");
 
-		
-							<!-- Section -->
-							<section>
-							    <header class="major">
-							        <h2>Get in Touch</h2>
-							    </header>
-							    <p>If you have any questions, feedback, or need assistance, we're here to help! Feel free to reach out to us via email, and we'll get back to you as soon as possible.</p>
-							    <ul class="contact">
-							        <li class="icon solid fa-envelope"><a href="mailto:support@jmobbi.com">support@jmobbi.com</a></li>
-							    </ul>
-							</section>
+									screenshots.forEach((url) => {
+										const imgElement = document.createElement("img");
+										imgElement.src = url;
+										imgElement.alt = "App Screenshot";
+										imgElement.classList.add("screenshot");
+										screenshotContainer.appendChild(imgElement);
+									});
+								} else {
+									console.error("No results found for the specified app ID.");
+								}
+							} catch (error) {
+								console.error("Error fetching app data:", error);
+							}
+						}
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Jmobbi. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
+						// Load screenshots for Exchange Converter Calculator
+						loadScreenshots(6480405624);
+					</script>
 
-						</div>
+					<style>
+						.screenshots {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 10px;
+							justify-content: center;
+						}
+
+						.screenshot {
+							width: 200px;
+							border-radius: 10px;
+							box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+						}
+
+						/* Horizontal scroll for small devices */
+						@media (max-width: 768px) {
+							.screenshots {
+								flex-wrap: nowrap;
+								overflow-x: auto;
+								justify-content: flex-start;
+								padding: 10px;
+								gap: 10px;
+							}
+
+							.screenshot {
+								flex: 0 0 auto;
+								/* Prevent shrinking */
+								width: 150px;
+								/* Adjust size for small devices */
+							}
+						}
+					</style>
+
+					<br>
+
+					<p>The Exchange Converter Calculator is the most intuitive, fast, and reliable currency exchange app
+						designed for iOS. Whether you’re planning a trip, managing international finances, or simply
+						staying informed, this app has everything you need to convert and calculate with confidence.</p>
+
+					<h2>Real-Time Currency Exchange Rates</h2>
+					<p>Stay updated with real-time exchange rates for over 160 global currencies. With data refreshed
+						hourly, you’ll always have the most accurate and reliable rates at your fingertips, ensuring
+						peace of mind for all your financial transactions.</p>
+
+					<h2>Instant Currency Conversion</h2>
+					<p>Convert between your chosen currencies instantly. Input amounts and get precise results with a
+						clean, user-friendly interface, making it perfect for quick calculations while traveling or
+						shopping internationally.</p>
+
+					<h2>Offline Currency Calculator</h2>
+					<p>Even without an internet connection, the Exchange Converter Calculator has you covered. It stores
+						the last updated rates, allowing you to perform offline calculations wherever you are—ideal for
+						flights, remote locations, or areas with poor connectivity.</p>
+
+					<h2>Search Functionality</h2>
+					<p>Easily find currencies with the integrated search feature. Search by currency code or name to
+						quickly locate the exact rates you need, saving time and hassle.</p>
+
+					<h2>Favorites List</h2>
+					<p>Keep your frequently used currencies in one place with the Favorites List. Add your preferred
+						currency pairs for quicker access and seamless conversion, tailored to your daily needs.</p>
+
+					<h2>Batch Currency Conversion</h2>
+					<p>Save time by converting amounts across multiple currencies in a single operation. Perfect for
+						multi-country trips or financial planning, this feature makes managing international
+						transactions effortless.</p>
+
+					<h2>Regular Updates</h2>
+					<p>Exchange rates are updated hourly to reflect the latest market data. For ultimate convenience,
+						the app refreshes automatically upon startup, ensuring you always have the latest information.
+					</p>
+
+					<h2>Smart Offline Features</h2>
+					<p>When starting offline, the app intelligently defaults to the last known rates, ensuring you never
+						have to guess or rely on outdated data. A manual refresh option is also available for those who
+						prefer greater control.</p>
+
+					<h2>Seamless Usability</h2>
+					<p>The app’s user-friendly interface and straightforward functionality make currency conversion easy
+						for everyone, whether you’re a traveler, a businessperson, or someone managing international
+						payments.</p>
+
+					<h2>Download Now</h2>
+					<p>Transform the way you handle currency exchange with the Exchange Converter Calculator. Download
+						now and experience the convenience of accurate, real-time conversions, offline calculations, and
+						intuitive design. It’s the perfect companion for travel, business, and everyday life.</p>
+
+					<div class="actions">
+						<!-- Button for iOS App Store -->
+						<a href="https://apps.apple.com/app/id6480405624" class="button primary icon fa-download">
+							Download for iOS
+						</a>
 					</div>
-					
+
+					<br>
+
+				</section>
 
 			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
 
-	</body>
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li>
+							<span class="opener">Our Apps</span>
+							<ul>
+								<li><a href="musicbox.html">Musicbox</a></li>
+								<li><a href="goplayer.html">GoPlayer</a></li>
+								<li><a href="mplayer.html">MPlayer</a></li>
+								<li><a href="yaplayer.html">YaPlayer</a></li>
+								<li><a href="fireplayer.html">FirePlayer</a></li>
+								<li><a href="exchange.html">Exchange Converter</a></li>
+							</ul>
+						</li>
+						<li><a href="privacy_policy.html">Privacy Policy</a></li>
+						<li><a href="terms.html">Terms and Conditions</a></li>
+						<li><a href="support.html">Support</a></li>
+					</ul>
+				</nav>
+
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get in Touch</h2>
+					</header>
+					<p>If you have any questions, feedback, or need assistance, we're here to help! Feel free to reach
+						out to us via email, and we'll get back to you as soon as possible.</p>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a href="mailto:support@jmobbi.com">support@jmobbi.com</a>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; Jmobbi. All rights reserved. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+				</footer>
+
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

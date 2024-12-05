@@ -5,188 +5,231 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>MPlayer | Jmobbi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>MPlayer | Jmobbi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+<body class="is-preload">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Jmobbi</strong></a>
-								</header>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Content -->
-								<section>
-								    <header class="main">
-								        <h1>MPlayer: Cloud Music Player and Downloader for MEGA.NZ</h1>
-								    </header>
-    
-								    <div id="app-screenshots" class="screenshots box">
-								        <!-- Screenshots will be dynamically loaded here -->
-								    </div>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
 
-								    <script>
-								        async function loadScreenshots(appId) {
-								            try {
-								                const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
-								                const response = await fetch(apiUrl);
-								                const data = await response.json();
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><strong>Jmobbi</strong></a>
+				</header>
 
-								                if (data.resultCount > 0) {
-								                    const screenshots = data.results[0].screenshotUrls.slice(0, 5); // Load the first 5 screenshots
-								                    const screenshotContainer = document.getElementById("app-screenshots");
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h1>MPlayer: Cloud Music Player and Downloader for MEGA.NZ</h1>
+					</header>
 
-								                    screenshots.forEach((url) => {
-								                        const imgElement = document.createElement("img");
-								                        imgElement.src = url;
-								                        imgElement.alt = "App Screenshot";
-								                        imgElement.classList.add("screenshot");
-								                        screenshotContainer.appendChild(imgElement);
-								                    });
-								                } else {
-								                    console.error("No results found for the specified app ID.");
-								                }
-								            } catch (error) {
-								                console.error("Error fetching app data:", error);
-								            }
-								        }
-
-								        // Load screenshots for MPlayer
-								        loadScreenshots(1097961510);
-								    </script>
-
-								    <style>
-								        .screenshots {
-								            display: flex;
-								            flex-wrap: wrap;
-								            gap: 10px;
-								            justify-content: center;
-								        }
-
-								        .screenshot {
-								            width: 200px;
-								            border-radius: 10px;
-								            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-								        }
-								    </style>
-
-								    <br>
-
-								    <p>Introducing MPlayer, the perfect music player for MEGA.NZ, designed to deliver a seamless and powerful music experience. Whether you're streaming music from MEGA.NZ or downloading it for offline playback, MPlayer offers advanced features to enhance your listening journey.</p>
-
-								    <h2>Offline Player for MEGA.NZ</h2>
-								    <p>Download your favorite music directly from MEGA.NZ and listen to it offline. With MPlayer, your music is always available, whether you’re on a flight, commuting, or in areas with limited internet access.</p>
-
-								    <h2>Equalizer for MEGA.NZ Music</h2>
-								    <p>Customize your audio experience with MPlayer's advanced equalizer. Adjust bass, treble, and other frequencies to create the perfect sound profile for your MEGA.NZ music collection.</p>
-
-								    <h2>Listen to Music from MEGA.NZ</h2>
-								    <p>Stream your music directly from MEGA.NZ with MPlayer. Enjoy high-quality playback and an intuitive interface that makes listening to your music a breeze.</p>
-
-								    <h2>Playlists for MEGA.NZ</h2>
-								    <p>Create, manage, and organize playlists effortlessly with MPlayer. Keep your MEGA.NZ music library sorted by mood, genre, or any category that fits your style.</p>
-
-								    <h2>Universal Audio Support</h2>
-								    <p>MPlayer supports a wide variety of audio formats, including MP3, FLAC, AAC, M4A, WAV, AIFF, and M4R. Enjoy seamless playback of your favorite tracks, no matter the format.</p>
-
-								    <h2>Audio Bookmarks</h2>
-								    <p>Save your place in a track with MPlayer’s audio bookmarks. Perfect for podcasts, audiobooks, or long songs, this feature lets you pick up right where you left off.</p>
-
-								    <h2>Playback Speed Control</h2>
-								    <p>Adjust playback speed to match your listening preferences. Whether you want to speed up an audiobook or slow down a song, MPlayer offers precise control for a tailored experience.</p>
-
-								    <h2>Sleep Timer</h2>
-								    <p>Set a sleep timer and let your music gently fade out as you drift off. This feature is perfect for those who love falling asleep to their favorite tracks.</p>
-
-								    <h2>Background Playback</h2>
-								    <p>Keep your music playing in the background while using other apps or when your device is locked. MPlayer ensures your tunes are always accessible.</p>
-
-								    <h2>File Manager</h2>
-								    <p>Organize your MEGA.NZ music library with MPlayer’s built-in file manager. Quickly move, rename, or delete files to keep your collection tidy.</p>
-
-								    <h2>Advanced Search</h2>
-								    <p>Easily locate tracks, albums, or artists with MPlayer's powerful search tool. Spend less time searching and more time enjoying your music.</p>
-
-								    <h2>Download MPlayer Now</h2>
-								    <p>Transform your MEGA.NZ music library with MPlayer's advanced features and seamless performance. Download the app today and enjoy your favorite tracks like never before.</p>
-
-								    <div class="actions">
-								        <!-- Button for iOS App Store -->
-								        <a href="https://apps.apple.com/app/id1097961510" class="button primary icon fa-download" style="margin-right: 20px;">
-								            Download for iOS
-								        </a>
-								    </div>
-								</section>
-
-						</div>
+					<div id="app-screenshots" class="screenshots box">
+						<!-- Screenshots will be dynamically loaded here -->
 					</div>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+					<script>
+						async function loadScreenshots(appId) {
+							try {
+								const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
+								const response = await fetch(apiUrl);
+								const data = await response.json();
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li>
-											<span class="opener">Our Apps</span>
-											<ul>
-												<li><a href="musicbox.html">Musicbox</a></li>
-												<li><a href="goplayer.html">GoPlayer</a></li>
-												<li><a href="mplayer.html">MPlayer</a></li>
-												<li><a href="yaplayer.html">YaPlayer</a></li>
-												<li><a href="fireplayer.html">FirePlayer</a></li>
-												<li><a href="exchange.html">Exchange Converter</a></li>
-											</ul>
-										</li>
-										<li><a href="privacy_policy.html">Privacy Policy</a></li>
-										<li><a href="terms.html">Terms and Conditions</a></li>
-										<li><a href="support.html">Support</a></li>
-									</ul>
-								</nav>
+								if (data.resultCount > 0) {
+									const screenshots = data.results[0].screenshotUrls.slice(0, 5); // Load the first 5 screenshots
+									const screenshotContainer = document.getElementById("app-screenshots");
 
-		
-							<!-- Section -->
-							<section>
-							    <header class="major">
-							        <h2>Get in Touch</h2>
-							    </header>
-							    <p>If you have any questions, feedback, or need assistance, we're here to help! Feel free to reach out to us via email, and we'll get back to you as soon as possible.</p>
-							    <ul class="contact">
-							        <li class="icon solid fa-envelope"><a href="mailto:support@jmobbi.com">support@jmobbi.com</a></li>
-							    </ul>
-							</section>
+									screenshots.forEach((url) => {
+										const imgElement = document.createElement("img");
+										imgElement.src = url;
+										imgElement.alt = "App Screenshot";
+										imgElement.classList.add("screenshot");
+										screenshotContainer.appendChild(imgElement);
+									});
+								} else {
+									console.error("No results found for the specified app ID.");
+								}
+							} catch (error) {
+								console.error("Error fetching app data:", error);
+							}
+						}
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Jmobbi. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
+						// Load screenshots for MPlayer
+						loadScreenshots(1097961510);
+					</script>
 
-						</div>
+					<style>
+						.screenshots {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 10px;
+							justify-content: center;
+						}
+
+						.screenshot {
+							width: 200px;
+							border-radius: 10px;
+							box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+						}
+
+						/* Horizontal scroll for small devices */
+						@media (max-width: 768px) {
+							.screenshots {
+								flex-wrap: nowrap;
+								overflow-x: auto;
+								justify-content: flex-start;
+								padding: 10px;
+								gap: 10px;
+							}
+
+							.screenshot {
+								flex: 0 0 auto;
+								/* Prevent shrinking */
+								width: 150px;
+								/* Adjust size for small devices */
+							}
+						}
+					</style>
+
+					<br>
+
+					<p>Introducing MPlayer, the perfect music player for MEGA.NZ, designed to deliver a seamless and
+						powerful music experience. Whether you're streaming music from MEGA.NZ or downloading it for
+						offline playback, MPlayer offers advanced features to enhance your listening journey.</p>
+
+					<h2>Offline Player for MEGA.NZ</h2>
+					<p>Download your favorite music directly from MEGA.NZ and listen to it offline. With MPlayer, your
+						music is always available, whether you’re on a flight, commuting, or in areas with limited
+						internet access.</p>
+
+					<h2>Equalizer for MEGA.NZ Music</h2>
+					<p>Customize your audio experience with MPlayer's advanced equalizer. Adjust bass, treble, and other
+						frequencies to create the perfect sound profile for your MEGA.NZ music collection.</p>
+
+					<h2>Listen to Music from MEGA.NZ</h2>
+					<p>Stream your music directly from MEGA.NZ with MPlayer. Enjoy high-quality playback and an
+						intuitive interface that makes listening to your music a breeze.</p>
+
+					<h2>Playlists for MEGA.NZ</h2>
+					<p>Create, manage, and organize playlists effortlessly with MPlayer. Keep your MEGA.NZ music library
+						sorted by mood, genre, or any category that fits your style.</p>
+
+					<h2>Universal Audio Support</h2>
+					<p>MPlayer supports a wide variety of audio formats, including MP3, FLAC, AAC, M4A, WAV, AIFF, and
+						M4R. Enjoy seamless playback of your favorite tracks, no matter the format.</p>
+
+					<h2>Audio Bookmarks</h2>
+					<p>Save your place in a track with MPlayer’s audio bookmarks. Perfect for podcasts, audiobooks, or
+						long songs, this feature lets you pick up right where you left off.</p>
+
+					<h2>Playback Speed Control</h2>
+					<p>Adjust playback speed to match your listening preferences. Whether you want to speed up an
+						audiobook or slow down a song, MPlayer offers precise control for a tailored experience.</p>
+
+					<h2>Sleep Timer</h2>
+					<p>Set a sleep timer and let your music gently fade out as you drift off. This feature is perfect
+						for those who love falling asleep to their favorite tracks.</p>
+
+					<h2>Background Playback</h2>
+					<p>Keep your music playing in the background while using other apps or when your device is locked.
+						MPlayer ensures your tunes are always accessible.</p>
+
+					<h2>File Manager</h2>
+					<p>Organize your MEGA.NZ music library with MPlayer’s built-in file manager. Quickly move, rename,
+						or delete files to keep your collection tidy.</p>
+
+					<h2>Advanced Search</h2>
+					<p>Easily locate tracks, albums, or artists with MPlayer's powerful search tool. Spend less time
+						searching and more time enjoying your music.</p>
+
+					<h2>Download MPlayer Now</h2>
+					<p>Transform your MEGA.NZ music library with MPlayer's advanced features and seamless performance.
+						Download the app today and enjoy your favorite tracks like never before.</p>
+
+					<div class="actions">
+						<!-- Button for iOS App Store -->
+						<a href="https://apps.apple.com/app/id1097961510" class="button primary icon fa-download"
+							style="margin-right: 20px;">
+							Download for iOS
+						</a>
 					</div>
+
+					<br>
+
+				</section>
 
 			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
 
-	</body>
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li>
+							<span class="opener">Our Apps</span>
+							<ul>
+								<li><a href="musicbox.html">Musicbox</a></li>
+								<li><a href="goplayer.html">GoPlayer</a></li>
+								<li><a href="mplayer.html">MPlayer</a></li>
+								<li><a href="yaplayer.html">YaPlayer</a></li>
+								<li><a href="fireplayer.html">FirePlayer</a></li>
+								<li><a href="exchange.html">Exchange Converter</a></li>
+							</ul>
+						</li>
+						<li><a href="privacy_policy.html">Privacy Policy</a></li>
+						<li><a href="terms.html">Terms and Conditions</a></li>
+						<li><a href="support.html">Support</a></li>
+					</ul>
+				</nav>
+
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get in Touch</h2>
+					</header>
+					<p>If you have any questions, feedback, or need assistance, we're here to help! Feel free to reach
+						out to us via email, and we'll get back to you as soon as possible.</p>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a href="mailto:support@jmobbi.com">support@jmobbi.com</a>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; Jmobbi. All rights reserved. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+				</footer>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
