@@ -26,6 +26,9 @@
 			contentEn.style.display = "block";
 			contentRu.style.display = "none";
 		}
+
+		// Load screenshots for YaPlayer
+		loadScreenshots(1103650450);
 	});
 
 	// Screenshots Loader Script
@@ -53,9 +56,6 @@
 			console.error("Error fetching app data:", error);
 		}
 	}
-
-	// Load screenshots for YaPlayer
-	loadScreenshots(1103650450);
 </script>
 
 <style>
@@ -67,9 +67,16 @@
 	}
 
 	.screenshot {
-		width: 200px;
+		width: auto;
+		/* Automatically adjusts width to maintain aspect ratio */
+		max-width: 200px;
+		/* Limit the maximum width */
+		max-height: 300px;
+		/* Limit the maximum height */
 		border-radius: 10px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		object-fit: contain;
+		/* Ensures the image fits within the max dimensions without stretching */
 	}
 
 	/* Horizontal scroll for small devices */
@@ -85,11 +92,14 @@
 		.screenshot {
 			flex: 0 0 auto;
 			/* Prevent shrinking */
-			width: 150px;
+			max-height: 200px;
+			/* Adjust max height for small devices */
+			max-width: 150px;
 			/* Adjust size for small devices */
 		}
 	}
 </style>
+
 
 <body class="is-preload">
 
