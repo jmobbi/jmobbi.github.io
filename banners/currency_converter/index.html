@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no"
+    />
+    <title>Money Currency Converter</title>
+    <style>
+      /* ---- App brand font (DM Sans, variable) ---- */
+      @font-face {
+        font-family: "DM Sans";
+        src: url("resources/fonts/DMSans.ttf") format("truetype");
+        font-weight: 100 1000;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      :root {
+        --bg: #0b0b0e;
+        --green: #32d583;
+        --green-soft: rgba(50, 213, 131, 0.14);
+        --fg: #ffffff;
+        --muted: #c8d6cf;
+        --hint: #8a8f99;
+        --gold: #ffc24b;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      html,
+      body {
+        height: 100%;
+        background: var(--bg);
+        font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+        color: var(--fg);
+        overflow: hidden;
+        overflow-x: hidden;
+      }
+
+      /* Full-screen interstitial takeover */
+      .interstitial {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh; /* fallback */
+        height: 100dvh; /* fits the visible area, excluding browser toolbars */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background:
+          radial-gradient(
+            120% 70% at 50% 0%,
+            rgba(50, 213, 131, 0.2) 0%,
+            rgba(50, 213, 131, 0.06) 32%,
+            rgba(11, 11, 14, 0) 62%
+          ),
+          var(--bg);
+        padding:
+          calc(env(safe-area-inset-top) + 12px)
+          clamp(16px, 4.5vw, 38px)
+          calc(env(safe-area-inset-bottom) + 16px);
+        overflow: hidden;
+      }
+      @media (max-height: 620px) {
+        .interstitial { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+      }
+
+      /* faint background currency glyphs for depth */
+      .ghost {
+        position: absolute;
+        font-weight: 800;
+        color: var(--green);
+        opacity: 0.045;
+        font-size: clamp(220px, 60vw, 460px);
+        line-height: 1;
+        pointer-events: none;
+        user-select: none;
+        z-index: 0;
+      }
+      .ghost.g1 { top: -6%; left: -14%; }
+      .ghost.g2 { bottom: -10%; right: -12%; }
+
+      /* ---- Top bar: FREE badge (left) + Skip (right) ---- */
+      .topbar {
+        width: 100%;
+        max-width: 760px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 3;
+        flex: 0 0 auto;
+      }
+      .free-badge {
+        font-size: clamp(11px, 3vw, 12.5px);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: var(--green);
+        background: var(--green-soft);
+        border: 1px solid rgba(50, 213, 131, 0.35);
+        padding: 6px 12px;
+        border-radius: 999px;
+        text-transform: uppercase;
+      }
+      .skip {
+        appearance: none;
+        border: none;
+        background: rgba(255, 255, 255, 0.08);
+        color: var(--muted);
+        width: 34px;
+        height: 34px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.18s ease, color 0.18s ease;
+      }
+      .skip:hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
+      .skip svg { width: 14px; height: 14px; }
+      .app-icon-link { display: inline-flex; text-decoration: none; cursor: pointer; }
+
+      /* ---- Centered content column ---- */
+      .content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 760px;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(10px, 2vh, 18px);
+        min-height: 0;
+        padding: clamp(6px, 1.4vh, 14px) 0;
+      }
+
+      /* Eyebrow — large, thin, elegant headline with a green accent on "Free" */
+      .eyebrow {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 10px;
+        flex: 0 0 auto;
+        z-index: 3;
+        margin: 50px 0 2px;
+        font-size: clamp(32px, 7.2vw, 46px);
+        font-weight: 600;
+        letter-spacing: 0.005em;
+        color: #f3f6f4;
+        white-space: nowrap;
+      }
+      .eyebrow .hl {
+        color: var(--green);
+        font-weight: 600;
+        text-shadow: 0 0 20px rgba(50, 213, 131, 0.4);
+      }
+      .eyebrow .spark {
+        align-self: center;
+        color: var(--green);
+        font-size: 0.62em;
+        font-weight: 600;
+        line-height: 1;
+        text-shadow: 0 0 16px rgba(50, 213, 131, 0.8);
+        animation: sparkle 2.6s ease-in-out infinite;
+      }
+
+      /* ---- Hero: app screenshot + brand/rating/features ---- */
+      .hero {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(16px, 4.5vw, 40px);
+        margin-top: 20px;
+      }
+      .shot {
+        flex: 0 0 auto;
+        position: relative;
+      }
+      /* green glow behind the phone */
+      .shot::before {
+        content: "";
+        position: absolute;
+        inset: -8% -16%;
+        background: radial-gradient(circle at center, rgba(50, 213, 131, 0.3), rgba(11, 11, 14, 0) 70%);
+        z-index: -1;
+        filter: blur(6px);
+      }
+      /* ---- iPhone frame holding the app video ----
+         Corner radii are LENGTHS derived from width (not %), and the screen
+         radius = outer radius − bezel, so the corners nest concentrically and
+         read as a real device (matches the rendered video frame). */
+      .phone {
+        --ph: clamp(240px, 36vh, 380px);   /* phone height */
+        --pw: calc(var(--ph) * 0.485);      /* phone width */
+        --rad: calc(var(--pw) * 0.16);      /* outer corner radius */
+        --bez: calc(var(--pw) * 0.04);      /* bezel thickness */
+        position: relative;
+        width: var(--pw);
+        height: var(--ph);
+        border-radius: var(--rad);
+        padding: var(--bez);
+        /* titanium rim: light edge top-left fading to near-black body */
+        background: linear-gradient(150deg, #54575f 0%, #1a1b1f 20%, #050506 60%);
+        box-shadow:
+          0 26px 64px rgba(0, 0, 0, 0.62),
+          0 0 54px rgba(50, 213, 131, 0.16),
+          inset 0 0 0 1.5px rgba(255, 255, 255, 0.22);
+      }
+      .phone .screen {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: calc(var(--rad) - var(--bez));
+        overflow: hidden;
+        background: #000;
+      }
+      .phone video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .phone .island {
+        position: absolute;
+        top: calc(var(--bez) + var(--pw) * 0.022);
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(var(--pw) * 0.3);
+        height: calc(var(--pw) * 0.072);
+        background: #000;
+        border-radius: 999px;
+        z-index: 3;
+      }
+
+      /* Centered brand header */
+      .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: clamp(8px, 1.6vh, 13px);
+      }
+      .features { flex: 0 1 auto; min-width: 0; }
+      .brandrow { display: flex; align-items: center; justify-content: center; gap: 14px; }
+      .brand-text { display: flex; flex-direction: column; gap: 4px; text-align: left; min-width: 0; }
+      .app-icon {
+        flex: 0 0 auto;
+        width: clamp(48px, 12.5vw, 64px);
+        height: clamp(48px, 12.5vw, 64px);
+        border-radius: 22.5%;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5), 0 0 30px rgba(50, 213, 131, 0.26);
+      }
+      .title {
+        font-size: clamp(28px, 7.2vw, 44px);
+        font-weight: 800;
+        letter-spacing: -0.035em;
+        line-height: 1.02;
+        overflow-wrap: break-word;
+      }
+      .hook {
+        font-size: clamp(13.5px, 3.7vw, 17px);
+        font-weight: 500;
+        color: var(--muted);
+        line-height: 1.25;
+        text-align: left;
+      }
+      .hook b { color: var(--green); font-weight: 700; }
+
+      /* Star rating */
+      .rating { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 8px; font-size: clamp(12.5px, 3.4vw, 14px); color: var(--muted); font-weight: 500; }
+      .stars { display: inline-flex; gap: 2px; }
+      .stars svg { width: clamp(15px, 4vw, 17px); height: clamp(15px, 4vw, 17px); fill: var(--gold); }
+      .rating b { color: #fff; font-weight: 700; }
+
+      /* Feature checklist */
+      .features { display: flex; flex-direction: column; gap: clamp(7px, 1.4vh, 11px); list-style: none; margin-top: 2px; }
+      .feature { display: flex; align-items: center; gap: 11px; }
+      .feature .ic {
+        flex: 0 0 auto;
+        width: clamp(26px, 7vw, 30px);
+        height: clamp(26px, 7vw, 30px);
+        border-radius: 9px;
+        background: var(--green-soft);
+        display: grid;
+        place-items: center;
+      }
+      .feature .ic svg { width: 56%; height: 56%; stroke: var(--green); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .feature .txt { min-width: 0; display: flex; flex-direction: column; }
+      .feature .lbl { font-size: clamp(14px, 3.8vw, 16px); font-weight: 600; line-height: 1.15; }
+      .feature .sub { font-size: clamp(11.5px, 3.2vw, 13px); font-weight: 400; color: var(--hint); line-height: 1.2; margin-top: 1px; }
+
+      /* ---- App Store download button (shimmering, pulsing) ---- */
+      .cta { flex: 0 0 auto; width: 100%; max-width: 760px; z-index: 2; text-decoration: none; margin-top: clamp(8px, 1.6vh, 14px); }
+      .store-btn {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        width: 100%;
+        background: linear-gradient(180deg, #ffffff 0%, #eef0f3 100%);
+        color: #0b0b0e;
+        border-radius: 16px;
+        padding: clamp(9px, 1.3vh, 12px) 20px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease;
+        animation: ctaglow 3.2s ease-in-out infinite;
+        will-change: transform, box-shadow;
+      }
+      /* smooth glossy sweep (white sheen, no hard color edge) */
+      .store-btn::after {
+        content: "";
+        position: absolute;
+        top: -20%;
+        left: -80%;
+        width: 60%;
+        height: 140%;
+        /* wide, soft green sheen — same broad shape as the other banners, tinted green */
+        background: linear-gradient(105deg, transparent 0%, rgba(72, 220, 148, 0.5) 50%, transparent 100%);
+        transform: skewX(-16deg);
+        animation: sheen 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation-delay: 1.4s;
+        pointer-events: none;
+      }
+      .cta:hover .store-btn { transform: translateY(-2px); box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4), 0 0 42px rgba(50, 213, 131, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.9); }
+      .cta:active .store-btn { transform: translateY(0) scale(0.985); transition-duration: 0.12s; }
+      .store-btn .apple { width: clamp(52px, 13.5vw, 62px); height: clamp(52px, 13.5vw, 62px); fill: #0b0b0e; flex: 0 0 auto; z-index: 1; }
+      .store-btn .lines { display: flex; flex-direction: column; line-height: 1.08; text-align: left; z-index: 1; }
+      .store-btn .small { font-size: clamp(10px, 2.7vw, 11px); font-weight: 600; opacity: 0.62; letter-spacing: 0.04em; text-transform: uppercase; }
+      .store-btn .big { font-size: clamp(18px, 4.8vw, 21px); font-weight: 800; letter-spacing: -0.015em; }
+      .store-btn .freepill {
+        margin-left: 10px;
+        font-size: clamp(11px, 3vw, 12.5px);
+        font-weight: 800;
+        color: #06150d;
+        background: linear-gradient(180deg, #43e293 0%, #28bf73 100%);
+        padding: 5px 13px;
+        border-radius: 999px;
+        z-index: 1;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        box-shadow: 0 4px 12px rgba(50, 213, 131, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+      }
+      .trust { font-size: clamp(11.5px, 3.2vw, 13px); color: var(--hint); text-align: center; margin-top: 8px; flex: 0 0 auto; }
+
+      /* ---- Keyframes ---- */
+      @keyframes pop { 0% { opacity: 0; transform: scale(0.55) rotate(-8deg); } 70% { opacity: 1; transform: scale(1.04) rotate(1deg); } 100% { opacity: 1; transform: scale(1) rotate(0); } }
+      @keyframes rise { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+      @keyframes slideL { 0% { opacity: 0; transform: translateX(-26px) scale(0.96); } 100% { opacity: 1; transform: translateX(0) scale(1); } }
+      @keyframes sheen { 0% { left: -80%; } 42%, 100% { left: 150%; } }
+      @keyframes ctaglow {
+        0%, 100% { box-shadow: 0 12px 30px rgba(0, 0, 0, 0.34), 0 0 20px rgba(50, 213, 131, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.9); }
+        50% { box-shadow: 0 14px 38px rgba(0, 0, 0, 0.4), 0 0 38px rgba(50, 213, 131, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.9); }
+      }
+
+      .eyebrow { animation: rise 0.5s ease both 0.25s; }
+      @keyframes sparkle {
+        0%, 100% { transform: scale(1) rotate(0); opacity: 0.85; }
+        50% { transform: scale(1.25) rotate(18deg); opacity: 1; }
+      }
+      .shot { animation: slideL 0.7s cubic-bezier(0.16, 1, 0.3, 1) both 0.35s; }
+      .brandrow { animation: rise 0.55s cubic-bezier(0.16, 1, 0.3, 1) both 0.5s; }
+      .app-icon { animation: pop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both 0.5s; }
+      .hook { animation: rise 0.5s ease both 0.62s; }
+      .rating { animation: rise 0.5s ease both 0.72s; }
+      .feature { animation: rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both; }
+      .feature:nth-child(1) { animation-delay: 0.82s; }
+      .feature:nth-child(2) { animation-delay: 0.89s; }
+      .feature:nth-child(3) { animation-delay: 0.96s; }
+      .feature:nth-child(4) { animation-delay: 1.03s; }
+      .feature:nth-child(5) { animation-delay: 1.10s; }
+      .feature:nth-child(6) { animation-delay: 1.17s; }
+      .feature:nth-child(7) { animation-delay: 1.24s; }
+      .cta { animation: rise 0.55s cubic-bezier(0.16, 1, 0.3, 1) both 1.34s; }
+      .trust { animation: rise 0.5s ease both 1.62s; }
+      /* Close button reveals last, after every other element has animated in */
+      .skip { animation: rise 0.5s ease both 2.2s; }
+
+      @media (prefers-reduced-motion: reduce) {
+        * { animation-duration: 0.001s !important; animation-iteration-count: 1 !important; }
+      }
+
+      /* ---- Narrow phones: stack screenshot beside a tight text column ---- */
+      /* ultra-narrow (iPhone SE/mini): shrink the 32px headline so it never clips */
+      @media (max-width: 384px) {
+        .eyebrow { font-size: 27px; }
+      }
+
+      @media (max-width: 560px) {
+        .title { font-size: clamp(26px, 7.6vw, 34px); }
+        .feature .sub { display: none; }
+        .phone { --ph: clamp(240px, 40vh, 340px); }
+        .features { gap: 7px; }
+      }
+
+      /* ---- Very short: shrink the screenshot so the column still fits ---- */
+      @media (max-height: 740px) {
+        .content { gap: 8px; }
+        .phone { --ph: clamp(220px, 36vh, 300px); }
+        .feature { gap: 9px; }
+      }
+
+      /* ---- Large / iPad: roomier, full feature subtext ---- */
+      @media (min-width: 760px) {
+        .content { max-width: 820px; gap: 22px; }
+        .hero { gap: 48px; }
+      }
+
+      /* RTL: mirror the left-aligned text columns */
+      [dir="rtl"] .brand-text,
+      [dir="rtl"] .hook,
+      [dir="rtl"] .store-btn .lines { text-align: right; }
+      [dir="rtl"] .store-btn .freepill { margin-left: 0; margin-right: 10px; }
+    </style>
+  </head>
+  <body>
+    <div class="interstitial" role="dialog" aria-label="App banner">
+      <div class="ghost g1" aria-hidden="true">$</div>
+      <div class="ghost g2" aria-hidden="true">€</div>
+
+      <!-- Top bar -->
+      <div class="topbar">
+        <a class="skip" id="closeBtn" href="action://close" role="button" aria-label="Close app banner">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none" /></svg>
+        </a>
+      </div>
+
+      <!-- Headline pinned near the top -->
+      <div class="eyebrow" data-i18n-html="eyebrow">Download our <span class="hl">Free</span> App</div>
+
+      <div class="content">
+        <!-- Centered brand header -->
+        <div class="header">
+          <div class="brandrow">
+            <a class="app-icon-link" id="iconLink" href="action://image"><img class="app-icon" src="resources/app-icon.png" alt="App icon" /></a>
+            <div class="brand-text">
+              <div class="title" data-i18n="appTitle">Currency Converter</div>
+              <div class="hook" data-i18n="hook">Calculate &amp; convert in one tap</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshot + feature list -->
+        <div class="hero">
+          <div class="shot">
+            <div class="phone">
+              <div class="screen">
+                <div class="island"></div>
+                <video src="resources/app.mp4" autoplay muted playsinline loop></video>
+              </div>
+            </div>
+          </div>
+          <ul class="features">
+            <li class="feature"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.64-6.36M21 4v4h-4"/></svg></span><span class="txt"><span class="lbl">Live rates · 163+ currencies</span><span class="sub">Auto-refreshes hourly · works offline</span></span></li>
+            <li class="feature"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 12h0M12 12h0M16 12h0M8 16h0M12 16h0M16 16v0"/></svg></span><span class="txt"><span class="lbl">Built-in calculator</span><span class="sub">Convert and compute on one screen</span></span></li>
+            <li class="feature"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-5 3 3 5-7"/></svg></span><span class="txt"><span class="lbl">Historical rate charts</span><span class="sub">48h · 2 weeks · 1 &amp; 3 months</span></span></li>
+            <li class="feature"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><span class="txt"><span class="lbl">Home screen widgets</span><span class="sub">Glance at rates without opening</span></span></li>
+            <li class="feature"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.4" fill="currentColor" stroke="none"/><circle cx="15" cy="17" r="2.4" fill="currentColor" stroke="none"/></svg></span><span class="txt"><span class="lbl">Set your own rates</span><span class="sub">Override live rates for any pair</span></span></li>
+            <li class="feature"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span><span class="txt"><span class="lbl">Batch conversion</span><span class="sub">Your whole list updates as you type</span></span></li>
+            <li class="feature"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8l7.4-4.3M8.3 13.2l7.4 4.3"/></svg></span><span class="txt"><span class="lbl">Share PDF receipts</span><span class="sub">Export any conversion to a clean PDF</span></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Download on the App Store -->
+      <a class="cta" id="cta" href="action://click">
+        <div class="store-btn">
+          <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.42c.02 2.36 2.07 3.15 2.1 3.16-.02.06-.33 1.13-1.09 2.23-.66.95-1.34 1.9-2.42 1.92-1.06.02-1.4-.63-2.61-.63-1.21 0-1.59.61-2.59.65-1.04.04-1.83-1.03-2.5-1.98-1.36-1.96-2.4-5.55-1-7.97.69-1.2 1.93-1.96 3.27-1.98 1.02-.02 1.99.69 2.61.69.62 0 1.79-.85 3.02-.73.52.02 1.97.21 2.9 1.58-.08.05-1.73 1.01-1.71 3.01M14.4 5.27c.55-.67.92-1.6.82-2.52-.79.03-1.75.53-2.32 1.19-.51.59-.96 1.53-.84 2.43.88.07 1.79-.45 2.34-1.1"/></svg>
+          <div class="lines">
+            <span class="small" data-i18n="storeSmall">Download on the</span>
+            <span class="big">App Store</span>
+          </div>
+          <span class="freepill" data-i18n="free">Free</span>
+        </div>
+      </a>
+      <div class="trust" data-i18n="trust">No sign-up · works offline · install in seconds</div>
+    </div>
+
+    <script>
+      /* ---- Localizations and the tap-target links live in config.json,
+             loaded at runtime. The English text baked into the markup above is
+             the fallback if the config can't be fetched (e.g. opened as a
+             file). The download / close / app-icon taps navigate to action://
+             URLs the native app intercepts internally. ---- */
+      function applyConfig(cfg) {
+        cfg = cfg || {};
+        var langs = cfg.languages || {};
+        var fallback = cfg.defaultLang && langs[cfg.defaultLang] ? cfg.defaultLang : "en";
+
+        // Case-insensitive language pick with zh script + common aliases.
+        var byLower = {};
+        Object.keys(langs).forEach(function (k) { byLower[k.toLowerCase()] = k; });
+        var zhMap = { "zh": "zh-hans", "zh-cn": "zh-hans", "zh-sg": "zh-hans", "zh-hans": "zh-hans",
+                      "zh-tw": "zh-hant", "zh-hk": "zh-hant", "zh-mo": "zh-hant", "zh-hant": "zh-hant" };
+        var alias = { "iw": "he", "in": "id", "no": "nb" };
+        function resolve(tag) {
+          return byLower[tag] || (zhMap[tag] && byLower[zhMap[tag]]) || (alias[tag] && byLower[alias[tag]]) || null;
+        }
+        var params = new URLSearchParams(location.search);
+        var raw = String(params.get("lang") || navigator.language || fallback).toLowerCase();
+        var key = resolve(raw) || resolve(raw.split("-")[0]) || fallback;
+        var t = langs[key];
+
+        // Point the tap targets at the action:// URLs from config (native handles them).
+        function setHref(id, url) { var el = document.getElementById(id); if (el && url) el.setAttribute("href", url); }
+        setHref("cta", cfg.clickUrl);
+        setHref("closeBtn", cfg.closeUrl);
+        setHref("iconLink", cfg.imageUrl);
+
+        if (!t) return; // no matching language block -> keep baked-in English
+
+        var root = document.documentElement;
+        root.lang = key;
+        root.dir = t.dir || "ltr";
+
+        // Plain-text nodes
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          var k = el.getAttribute("data-i18n");
+          if (t[k] != null) el.textContent = t[k];
+        });
+        // Rich-text nodes (headline keeps the green "Free" highlight span)
+        document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+          var k = el.getAttribute("data-i18n-html");
+          if (t[k] != null) el.innerHTML = t[k];
+        });
+
+        // Accessibility labels
+        var dialog = document.querySelector(".interstitial");
+        if (dialog && t.a11yTitle) dialog.setAttribute("aria-label", t.a11yTitle);
+        var closeBtn = document.getElementById("closeBtn");
+        if (closeBtn && t.a11yClose) closeBtn.setAttribute("aria-label", t.a11yClose);
+        var appIcon = document.querySelector(".app-icon");
+        if (appIcon && t.a11yIcon) appIcon.setAttribute("alt", t.a11yIcon);
+        var video = document.querySelector(".phone video");
+        if (video && t.a11yShot) video.setAttribute("aria-label", t.a11yShot);
+
+        // Feature list (label + subtitle by index)
+        var lbls = document.querySelectorAll(".feature .lbl");
+        var subs = document.querySelectorAll(".feature .sub");
+        (t.features || []).forEach(function (f, i) {
+          if (lbls[i]) lbls[i].textContent = f[0];
+          if (subs[i]) subs[i].textContent = f[1];
+        });
+      }
+
+      fetch("config.json", { cache: "no-cache" })
+        .then(function (r) { return r.json(); })
+        .then(applyConfig)
+        .catch(function () { /* keep baked-in English fallback */ });
+
+      // Play the app demo at 1.2× speed, looping continuously.
+      (function () {
+        var v = document.querySelector(".phone video");
+        if (!v) return;
+        var rate = function () { v.playbackRate = 1.2; };
+        rate();
+        v.addEventListener("loadedmetadata", rate);
+        v.addEventListener("play", rate);
+      })();
+    </script>
+  </body>
+</html>

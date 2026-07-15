@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "banners": [
+    {
+      "id": 1,
+      "name": "currency_converter",
+      "platform": "ios",
+      "scheme": "jmobbiconverter",
+      "bundleID": "com.jmobbi.converter",
+      "version": 1,
+      "priority": "normal",
+      "configPath": "currency_converter/config.json",
+      "indexPath": "currency_converter/index.html"
+    }
+  ]
+}

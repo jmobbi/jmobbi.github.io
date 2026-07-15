@@ -1,0 +1,1867 @@
+{
+  "id": 1,
+  "version": 1,
+  "appId": "6480405624",
+  "scheme": "jmobbiconverter",
+  "bundleID": "com.jmobbi.converter",
+  "storeUrl": "https://apps.apple.com/app/id6480405624",
+  "webSiteURL": "https://jmobbi.com/exchange.html",
+  "clickUrl": "action://click",
+  "closeUrl": "action://close",
+  "imageUrl": "action://image",
+  "indexPath": "index.html",
+  "defaultLang": "en",
+  "languages": {
+    "en": {
+      "eyebrow": "Download our <span class=\"hl\">Free</span> App",
+      "appTitle": "Currency Converter",
+      "hook": "Calculate & convert in one tap",
+      "storeSmall": "Download on the",
+      "free": "Free",
+      "trust": "No sign-up · works offline · install in seconds",
+      "features": [
+        [
+          "Live rates · 163+ currencies",
+          "Auto-refreshes hourly · works offline"
+        ],
+        [
+          "Built-in calculator",
+          "Convert and compute on one screen"
+        ],
+        [
+          "Historical rate charts",
+          "48h · 2 weeks · 1 & 3 months"
+        ],
+        [
+          "Home screen widgets",
+          "Glance at rates without opening"
+        ],
+        [
+          "Set your own rates",
+          "Override live rates for any pair"
+        ],
+        [
+          "Batch conversion",
+          "Your whole list updates as you type"
+        ],
+        [
+          "Share PDF receipts",
+          "Export any conversion to a clean PDF"
+        ]
+      ],
+      "a11yTitle": "App banner",
+      "a11yClose": "Close app banner",
+      "a11yIcon": "App icon",
+      "a11yShot": "App screenshot"
+    },
+    "ar": {
+      "dir": "rtl",
+      "eyebrow": "حمّل تطبيقنا <span class=\"hl\">المجاني</span>",
+      "appTitle": "محول العملات",
+      "hook": "احسب وحوّل بنقرة واحدة",
+      "storeSmall": "حمّله من",
+      "free": "مجاني",
+      "trust": "بدون تسجيل · يعمل دون اتصال · تثبيت في ثوانٍ",
+      "features": [
+        [
+          "أسعار حية · 163+ عملة",
+          "تحديث تلقائي كل ساعة · يعمل دون اتصال"
+        ],
+        [
+          "حاسبة مدمجة",
+          "حوّل واحسب في شاشة واحدة"
+        ],
+        [
+          "مخططات الأسعار التاريخية",
+          "48h · أسبوعان · شهر و3 أشهر"
+        ],
+        [
+          "أدوات الشاشة الرئيسية",
+          "اطّلع على الأسعار دون فتح التطبيق"
+        ],
+        [
+          "اضبط أسعارك الخاصة",
+          "تجاوز الأسعار الحية لأي زوج"
+        ],
+        [
+          "تحويل جماعي",
+          "تتحدث قائمتك كاملة أثناء الكتابة"
+        ],
+        [
+          "مشاركة إيصالات PDF",
+          "صدّر أي تحويل إلى ملف PDF أنيق"
+        ]
+      ],
+      "a11yTitle": "لافتة التطبيق",
+      "a11yClose": "إغلاق لافتة التطبيق",
+      "a11yIcon": "أيقونة التطبيق",
+      "a11yShot": "لقطة شاشة التطبيق"
+    },
+    "bn": {
+      "eyebrow": "আমাদের <span class=\"hl\">ফ্রি</span> অ্যাপ ডাউনলোড করুন",
+      "appTitle": "কারেন্সি কনভার্টার",
+      "hook": "এক ট্যাপে হিসাব ও রূপান্তর করুন",
+      "storeSmall": "ডাউনলোড করুন",
+      "free": "ফ্রি",
+      "trust": "সাইন-আপ ছাড়াই · অফলাইনে কাজ করে · সেকেন্ডে ইনস্টল",
+      "features": [
+        [
+          "লাইভ রেট · 163+ মুদ্রা",
+          "প্রতি ঘণ্টায় স্বয়ংক্রিয় রিফ্রেশ · অফলাইনে কাজ করে"
+        ],
+        [
+          "বিল্ট-ইন ক্যালকুলেটর",
+          "এক স্ক্রিনে রূপান্তর ও হিসাব করুন"
+        ],
+        [
+          "ঐতিহাসিক রেট চার্ট",
+          "48h · 2 সপ্তাহ · 1 ও 3 মাস"
+        ],
+        [
+          "হোম স্ক্রিন উইজেট",
+          "না খুলেই রেট দেখুন"
+        ],
+        [
+          "নিজের রেট সেট করুন",
+          "যেকোনো জোড়ার জন্য লাইভ রেট বদলান"
+        ],
+        [
+          "ব্যাচ রূপান্তর",
+          "টাইপ করার সাথে সাথে পুরো তালিকা আপডেট হয়"
+        ],
+        [
+          "PDF রসিদ শেয়ার করুন",
+          "যেকোনো রূপান্তর পরিচ্ছন্ন PDF-এ রপ্তানি করুন"
+        ]
+      ],
+      "a11yTitle": "অ্যাপ ব্যানার",
+      "a11yClose": "অ্যাপ ব্যানার বন্ধ করুন",
+      "a11yIcon": "অ্যাপ আইকন",
+      "a11yShot": "অ্যাপ স্ক্রিনশট"
+    },
+    "ca": {
+      "eyebrow": "Baixa la nostra app <span class=\"hl\">gratuïta</span>",
+      "appTitle": "Convertidor de divises",
+      "hook": "Calcula i converteix amb un toc",
+      "storeSmall": "Baixa-la a l’",
+      "free": "Gratis",
+      "trust": "Sense registre · funciona sense connexió · instal·la en segons",
+      "features": [
+        [
+          "Taxes en directe · 163+ divises",
+          "S'actualitza cada hora · funciona sense connexió"
+        ],
+        [
+          "Calculadora integrada",
+          "Converteix i calcula en una pantalla"
+        ],
+        [
+          "Gràfics de taxes històriques",
+          "48h · 2 setmanes · 1 i 3 mesos"
+        ],
+        [
+          "Ginys de pantalla d'inici",
+          "Consulta les taxes sense obrir l'app"
+        ],
+        [
+          "Defineix les teves taxes",
+          "Substitueix les taxes en directe de qualsevol parell"
+        ],
+        [
+          "Conversió per lots",
+          "Tota la llista s'actualitza mentre escrius"
+        ],
+        [
+          "Comparteix rebuts en PDF",
+          "Exporta qualsevol conversió a un PDF net"
+        ]
+      ],
+      "a11yTitle": "Bàner de l’app",
+      "a11yClose": "Tanca el bàner de l’app",
+      "a11yIcon": "Icona de l’app",
+      "a11yShot": "Captura de l’app"
+    },
+    "cs": {
+      "eyebrow": "Stáhněte si naši <span class=\"hl\">bezplatnou</span> aplikaci",
+      "appTitle": "Převodník měn",
+      "hook": "Spočítejte a převeďte jedním klepnutím",
+      "storeSmall": "Stáhnout na",
+      "free": "Zdarma",
+      "trust": "Bez registrace · funguje offline · instalace během chvíle",
+      "features": [
+        [
+          "Živé kurzy · 163+ měn",
+          "Automatická aktualizace každou hodinu · funguje offline"
+        ],
+        [
+          "Vestavěná kalkulačka",
+          "Převádějte a počítejte na jedné obrazovce"
+        ],
+        [
+          "Grafy historických kurzů",
+          "48h · 2 týdny · 1 a 3 měsíce"
+        ],
+        [
+          "Widgety na plochu",
+          "Podívejte se na kurzy bez otevírání"
+        ],
+        [
+          "Nastavte si vlastní kurzy",
+          "Přepište živé kurzy pro libovolný pár"
+        ],
+        [
+          "Hromadný převod",
+          "Celý seznam se aktualizuje během psaní"
+        ],
+        [
+          "Sdílejte účtenky v PDF",
+          "Exportujte jakýkoli převod do čistého PDF"
+        ]
+      ],
+      "a11yTitle": "Banner aplikace",
+      "a11yClose": "Zavřít banner aplikace",
+      "a11yIcon": "Ikona aplikace",
+      "a11yShot": "Snímek aplikace"
+    },
+    "da": {
+      "eyebrow": "Download vores <span class=\"hl\">gratis</span> app",
+      "appTitle": "Valutaomregner",
+      "hook": "Beregn og omregn med ét tryk",
+      "storeSmall": "Hent i",
+      "free": "Gratis",
+      "trust": "Ingen tilmelding · virker offline · installeres på sekunder",
+      "features": [
+        [
+          "Live kurser · 163+ valutaer",
+          "Opdateres automatisk hver time · virker offline"
+        ],
+        [
+          "Indbygget lommeregner",
+          "Omregn og beregn på én skærm"
+        ],
+        [
+          "Historiske kursgrafer",
+          "48h · 2 uger · 1 og 3 måneder"
+        ],
+        [
+          "Widgets på hjemmeskærmen",
+          "Se kurser uden at åbne appen"
+        ],
+        [
+          "Indstil dine egne kurser",
+          "Tilsidesæt live kurser for ethvert par"
+        ],
+        [
+          "Batchomregning",
+          "Hele din liste opdateres, mens du skriver"
+        ],
+        [
+          "Del PDF-kvitteringer",
+          "Eksportér enhver omregning til en ren PDF"
+        ]
+      ],
+      "a11yTitle": "App-banner",
+      "a11yClose": "Luk app-banner",
+      "a11yIcon": "App-ikon",
+      "a11yShot": "App-skærmbillede"
+    },
+    "de": {
+      "eyebrow": "Lade unsere <span class=\"hl\">kostenlose</span> App",
+      "appTitle": "Währungsrechner",
+      "hook": "Berechnen & umrechnen mit einem Tipp",
+      "storeSmall": "Laden im",
+      "free": "Gratis",
+      "trust": "Keine Anmeldung · funktioniert offline · in Sekunden installiert",
+      "features": [
+        [
+          "Live-Kurse · 163+ Währungen",
+          "Aktualisiert stündlich · funktioniert offline"
+        ],
+        [
+          "Integrierter Rechner",
+          "Umrechnen und rechnen auf einem Bildschirm"
+        ],
+        [
+          "Historische Kurscharts",
+          "48h · 2 Wochen · 1 und 3 Monate"
+        ],
+        [
+          "Home-Bildschirm-Widgets",
+          "Kurse auf einen Blick ohne Öffnen"
+        ],
+        [
+          "Eigene Kurse festlegen",
+          "Live-Kurse für jedes Paar überschreiben"
+        ],
+        [
+          "Stapelumrechnung",
+          "Deine ganze Liste aktualisiert sich beim Tippen"
+        ],
+        [
+          "PDF-Belege teilen",
+          "Jede Umrechnung als sauberes PDF exportieren"
+        ]
+      ],
+      "a11yTitle": "App-Banner",
+      "a11yClose": "App-Banner schließen",
+      "a11yIcon": "App-Symbol",
+      "a11yShot": "App-Screenshot"
+    },
+    "el": {
+      "eyebrow": "Κατεβάστε τη <span class=\"hl\">δωρεάν</span> εφαρμογή μας",
+      "appTitle": "Μετατροπέας νομισμάτων",
+      "hook": "Υπολογίστε & μετατρέψτε με ένα άγγιγμα",
+      "storeSmall": "Κατεβάστε το από το",
+      "free": "Δωρεάν",
+      "trust": "Χωρίς εγγραφή · λειτουργεί εκτός σύνδεσης · εγκατάσταση σε δευτερόλεπτα",
+      "features": [
+        [
+          "Ζωντανές ισοτιμίες · 163+ νομίσματα",
+          "Αυτόματη ανανέωση ανά ώρα · λειτουργεί εκτός σύνδεσης"
+        ],
+        [
+          "Ενσωματωμένη αριθμομηχανή",
+          "Μετατρέψτε και υπολογίστε σε μία οθόνη"
+        ],
+        [
+          "Γραφήματα ιστορικών ισοτιμιών",
+          "48h · 2 εβδομάδες · 1 και 3 μήνες"
+        ],
+        [
+          "Widgets αρχικής οθόνης",
+          "Δείτε τις ισοτιμίες χωρίς άνοιγμα"
+        ],
+        [
+          "Ορίστε τις δικές σας ισοτιμίες",
+          "Παρακάμψτε τις ζωντανές ισοτιμίες για κάθε ζεύγος"
+        ],
+        [
+          "Μαζική μετατροπή",
+          "Όλη η λίστα σας ενημερώνεται καθώς πληκτρολογείτε"
+        ],
+        [
+          "Κοινοποίηση αποδείξεων PDF",
+          "Εξαγωγή κάθε μετατροπής σε καθαρό PDF"
+        ]
+      ],
+      "a11yTitle": "Μπάνερ εφαρμογής",
+      "a11yClose": "Κλείσιμο μπάνερ εφαρμογής",
+      "a11yIcon": "Εικονίδιο εφαρμογής",
+      "a11yShot": "Στιγμιότυπο εφαρμογής"
+    },
+    "es": {
+      "eyebrow": "Descarga nuestra app <span class=\"hl\">gratis</span>",
+      "appTitle": "Conversor de divisas",
+      "hook": "Calcula y convierte con un toque",
+      "storeSmall": "Descárgala en el",
+      "free": "Gratis",
+      "trust": "Sin registro · funciona sin conexión · instalación en segundos",
+      "features": [
+        [
+          "Tasas en vivo · 163+ divisas",
+          "Se actualiza cada hora · funciona sin conexión"
+        ],
+        [
+          "Calculadora integrada",
+          "Convierte y calcula en una sola pantalla"
+        ],
+        [
+          "Gráficos de tasas históricas",
+          "48h · 2 semanas · 1 y 3 meses"
+        ],
+        [
+          "Widgets de pantalla de inicio",
+          "Consulta las tasas sin abrir la app"
+        ],
+        [
+          "Define tus propias tasas",
+          "Anula las tasas en vivo de cualquier par"
+        ],
+        [
+          "Conversión por lotes",
+          "Toda tu lista se actualiza mientras escribes"
+        ],
+        [
+          "Comparte recibos en PDF",
+          "Exporta cualquier conversión a un PDF limpio"
+        ]
+      ],
+      "a11yTitle": "Banner de la app",
+      "a11yClose": "Cerrar banner de la app",
+      "a11yIcon": "Icono de la app",
+      "a11yShot": "Captura de la app"
+    },
+    "fi": {
+      "eyebrow": "Lataa <span class=\"hl\">ilmainen</span> sovelluksemme",
+      "appTitle": "Valuuttamuunnin",
+      "hook": "Laske ja muunna yhdellä napautuksella",
+      "storeSmall": "Lataa",
+      "free": "Ilmainen",
+      "trust": "Ei rekisteröitymistä · toimii offline-tilassa · asennus sekunneissa",
+      "features": [
+        [
+          "Reaaliaikaiset kurssit · 163+ valuuttaa",
+          "Päivittyy automaattisesti tunneittain · toimii offline-tilassa"
+        ],
+        [
+          "Sisäänrakennettu laskin",
+          "Muunna ja laske yhdellä näytöllä"
+        ],
+        [
+          "Historialliset kurssikaaviot",
+          "48h · 2 viikkoa · 1 ja 3 kuukautta"
+        ],
+        [
+          "Alkunäytön widgetit",
+          "Vilkaise kursseja avaamatta sovellusta"
+        ],
+        [
+          "Aseta omat kurssisi",
+          "Ohita reaaliaikaiset kurssit mille tahansa parille"
+        ],
+        [
+          "Erämuunnos",
+          "Koko listasi päivittyy kirjoittaessasi"
+        ],
+        [
+          "Jaa PDF-kuitteja",
+          "Vie mikä tahansa muunnos siistiksi PDF:ksi"
+        ]
+      ],
+      "a11yTitle": "Sovelluksen banneri",
+      "a11yClose": "Sulje sovelluksen banneri",
+      "a11yIcon": "Sovelluksen kuvake",
+      "a11yShot": "Sovelluksen kuvakaappaus"
+    },
+    "fr": {
+      "eyebrow": "Téléchargez notre appli <span class=\"hl\">gratuite</span>",
+      "appTitle": "Convertisseur de devises",
+      "hook": "Calculez et convertissez en un geste",
+      "storeSmall": "Télécharger dans l’",
+      "free": "Gratuit",
+      "trust": "Sans inscription · fonctionne hors ligne · installation en quelques secondes",
+      "features": [
+        [
+          "Taux en direct · 163+ devises",
+          "Actualisation automatique toutes les heures · fonctionne hors ligne"
+        ],
+        [
+          "Calculatrice intégrée",
+          "Convertissez et calculez sur un seul écran"
+        ],
+        [
+          "Graphiques de taux historiques",
+          "48h · 2 semaines · 1 et 3 mois"
+        ],
+        [
+          "Widgets d'écran d'accueil",
+          "Consultez les taux sans ouvrir l'app"
+        ],
+        [
+          "Définissez vos propres taux",
+          "Remplacez les taux en direct pour toute paire"
+        ],
+        [
+          "Conversion par lots",
+          "Toute votre liste se met à jour à la saisie"
+        ],
+        [
+          "Partagez des reçus PDF",
+          "Exportez toute conversion en un PDF soigné"
+        ]
+      ],
+      "a11yTitle": "Bannière de l’app",
+      "a11yClose": "Fermer la bannière de l’app",
+      "a11yIcon": "Icône de l’app",
+      "a11yShot": "Capture d’écran de l’app"
+    },
+    "gu": {
+      "eyebrow": "અમારી <span class=\"hl\">મફત</span> એપ ડાઉનલોડ કરો",
+      "appTitle": "કરન્સી કન્વર્ટર",
+      "hook": "એક ટૅપમાં ગણો અને રૂપાંતરિત કરો",
+      "storeSmall": "ડાઉનલોડ કરો",
+      "free": "મફત",
+      "trust": "સાઇન-અપ વિના · ઑફલાઇન કામ કરે · સેકન્ડમાં ઇન્સ્ટોલ",
+      "features": [
+        [
+          "લાઇવ દર · 163+ ચલણ",
+          "દર કલાકે ઑટો-રિફ્રેશ · ઑફલાઇન કામ કરે"
+        ],
+        [
+          "બિલ્ટ-ઇન કૅલ્ક્યુલેટર",
+          "એક જ સ્ક્રીન પર રૂપાંતર અને ગણતરી"
+        ],
+        [
+          "ઐતિહાસિક દર ચાર્ટ",
+          "48h · 2 અઠવાડિયાં · 1 અને 3 મહિના"
+        ],
+        [
+          "હોમ સ્ક્રીન વિજેટ્સ",
+          "ખોલ્યા વિના દર જુઓ"
+        ],
+        [
+          "તમારા પોતાના દર સેટ કરો",
+          "કોઈપણ જોડી માટે લાઇવ દર બદલો"
+        ],
+        [
+          "બૅચ રૂપાંતર",
+          "તમે ટાઇપ કરો તેમ આખી યાદી અપડેટ થાય"
+        ],
+        [
+          "PDF રસીદ શેર કરો",
+          "કોઈપણ રૂપાંતરને સ્વચ્છ PDF માં નિકાસ કરો"
+        ]
+      ],
+      "a11yTitle": "એપ બેનર",
+      "a11yClose": "એપ બેનર બંધ કરો",
+      "a11yIcon": "એપ આઇકન",
+      "a11yShot": "એપ સ્ક્રીનશોટ"
+    },
+    "he": {
+      "dir": "rtl",
+      "eyebrow": "הורידו את האפליקציה <span class=\"hl\">החינמית</span> שלנו",
+      "appTitle": "ממיר מטבעות",
+      "hook": "חשבו והמירו בהקשה אחת",
+      "storeSmall": "הורידו מ־",
+      "free": "חינם",
+      "trust": "ללא הרשמה · פועל אופליין · התקנה תוך שניות",
+      "features": [
+        [
+          "שערים בזמן אמת · 163+ מטבעות",
+          "מתעדכן אוטומטית מדי שעה · פועל אופליין"
+        ],
+        [
+          "מחשבון מובנה",
+          "המירו וחשבו במסך אחד"
+        ],
+        [
+          "גרפים של שערים היסטוריים",
+          "48h · שבועיים · חודש ו-3 חודשים"
+        ],
+        [
+          "ווידג'טים במסך הבית",
+          "הציצו בשערים בלי לפתוח"
+        ],
+        [
+          "הגדירו שערים משלכם",
+          "עקפו את השערים החיים לכל צמד"
+        ],
+        [
+          "המרה מרובה",
+          "כל הרשימה שלכם מתעדכנת תוך כדי הקלדה"
+        ],
+        [
+          "שיתוף קבלות PDF",
+          "ייצאו כל המרה ל-PDF נקי"
+        ]
+      ],
+      "a11yTitle": "באנר האפליקציה",
+      "a11yClose": "סגירת באנר האפליקציה",
+      "a11yIcon": "סמל האפליקציה",
+      "a11yShot": "צילום מסך של האפליקציה"
+    },
+    "hi": {
+      "eyebrow": "हमारा <span class=\"hl\">मुफ़्त</span> ऐप डाउनलोड करें",
+      "appTitle": "करेंसी कन्वर्टर",
+      "hook": "एक टैप में गणना और रूपांतरण करें",
+      "storeSmall": "डाउनलोड करें",
+      "free": "मुफ़्त",
+      "trust": "साइन-अप नहीं · ऑफ़लाइन काम करता है · सेकंडों में इंस्टॉल",
+      "features": [
+        [
+          "लाइव दरें · 163+ मुद्राएँ",
+          "हर घंटे ऑटो-रिफ्रेश · ऑफ़लाइन काम करता है"
+        ],
+        [
+          "बिल्ट-इन कैलकुलेटर",
+          "एक ही स्क्रीन पर रूपांतरण और गणना करें"
+        ],
+        [
+          "ऐतिहासिक दर चार्ट",
+          "48h · 2 सप्ताह · 1 और 3 महीने"
+        ],
+        [
+          "होम स्क्रीन विजेट",
+          "बिना खोले दरें देखें"
+        ],
+        [
+          "अपनी दरें सेट करें",
+          "किसी भी जोड़ी के लिए लाइव दरें बदलें"
+        ],
+        [
+          "बैच रूपांतरण",
+          "टाइप करते ही आपकी पूरी सूची अपडेट होती है"
+        ],
+        [
+          "PDF रसीदें शेयर करें",
+          "किसी भी रूपांतरण को साफ़ PDF में निर्यात करें"
+        ]
+      ],
+      "a11yTitle": "ऐप बैनर",
+      "a11yClose": "ऐप बैनर बंद करें",
+      "a11yIcon": "ऐप आइकन",
+      "a11yShot": "ऐप स्क्रीनशॉट"
+    },
+    "hr": {
+      "eyebrow": "Preuzmite našu <span class=\"hl\">besplatnu</span> aplikaciju",
+      "appTitle": "Pretvarač valuta",
+      "hook": "Izračunajte i pretvorite jednim dodirom",
+      "storeSmall": "Preuzmite na",
+      "free": "Besplatno",
+      "trust": "Bez registracije · radi izvanmrežno · instalacija u sekundama",
+      "features": [
+        [
+          "Tečajevi uživo · 163+ valuta",
+          "Automatsko osvježavanje svaki sat · radi izvanmrežno"
+        ],
+        [
+          "Ugrađeni kalkulator",
+          "Pretvarajte i računajte na jednom zaslonu"
+        ],
+        [
+          "Grafikoni povijesnih tečajeva",
+          "48h · 2 tjedna · 1 i 3 mjeseca"
+        ],
+        [
+          "Widgeti početnog zaslona",
+          "Pogledajte tečajeve bez otvaranja"
+        ],
+        [
+          "Postavite vlastite tečajeve",
+          "Zamijenite tečajeve uživo za bilo koji par"
+        ],
+        [
+          "Skupna pretvorba",
+          "Cijeli popis se ažurira dok tipkate"
+        ],
+        [
+          "Dijelite PDF potvrde",
+          "Izvezite bilo koju pretvorbu u čist PDF"
+        ]
+      ],
+      "a11yTitle": "Banner aplikacije",
+      "a11yClose": "Zatvori banner aplikacije",
+      "a11yIcon": "Ikona aplikacije",
+      "a11yShot": "Snimka zaslona aplikacije"
+    },
+    "hu": {
+      "eyebrow": "Töltsd le <span class=\"hl\">ingyenes</span> alkalmazásunkat",
+      "appTitle": "Valutaváltó",
+      "hook": "Számoljon és váltson egyetlen koppintással",
+      "storeSmall": "Töltsd le innen:",
+      "free": "Ingyenes",
+      "trust": "Regisztráció nélkül · offline is működik · pár másodperc alatt telepíthető",
+      "features": [
+        [
+          "Élő árfolyamok · 163+ pénznem",
+          "Óránként automatikusan frissül · offline is működik"
+        ],
+        [
+          "Beépített számológép",
+          "Váltson és számoljon egyetlen képernyőn"
+        ],
+        [
+          "Történelmi árfolyamdiagramok",
+          "48h · 2 hét · 1 és 3 hónap"
+        ],
+        [
+          "Kezdőképernyő-widgetek",
+          "Nézze meg az árfolyamokat megnyitás nélkül"
+        ],
+        [
+          "Állítsa be saját árfolyamait",
+          "Írja felül az élő árfolyamot bármely párnál"
+        ],
+        [
+          "Kötegelt átváltás",
+          "A teljes lista frissül, ahogy gépel"
+        ],
+        [
+          "PDF-nyugták megosztása",
+          "Exportáljon bármilyen átváltást letisztult PDF-be"
+        ]
+      ],
+      "a11yTitle": "Alkalmazásbanner",
+      "a11yClose": "Alkalmazásbanner bezárása",
+      "a11yIcon": "Alkalmazásikon",
+      "a11yShot": "Alkalmazás képernyőkép"
+    },
+    "id": {
+      "eyebrow": "Unduh aplikasi <span class=\"hl\">gratis</span> kami",
+      "appTitle": "Konverter Mata Uang",
+      "hook": "Hitung & konversi dengan satu ketuk",
+      "storeSmall": "Unduh di",
+      "free": "Gratis",
+      "trust": "Tanpa daftar · berfungsi offline · instal dalam hitungan detik",
+      "features": [
+        [
+          "Kurs langsung · 163+ mata uang",
+          "Menyegar otomatis tiap jam · berfungsi offline"
+        ],
+        [
+          "Kalkulator bawaan",
+          "Konversi dan hitung dalam satu layar"
+        ],
+        [
+          "Grafik kurs historis",
+          "48h · 2 minggu · 1 dan 3 bulan"
+        ],
+        [
+          "Widget layar utama",
+          "Lihat kurs tanpa membuka aplikasi"
+        ],
+        [
+          "Atur kurs Anda sendiri",
+          "Ganti kurs langsung untuk pasangan apa pun"
+        ],
+        [
+          "Konversi massal",
+          "Seluruh daftar diperbarui saat Anda mengetik"
+        ],
+        [
+          "Bagikan tanda terima PDF",
+          "Ekspor konversi apa pun ke PDF yang rapi"
+        ]
+      ],
+      "a11yTitle": "Banner aplikasi",
+      "a11yClose": "Tutup banner aplikasi",
+      "a11yIcon": "Ikon aplikasi",
+      "a11yShot": "Tangkapan layar aplikasi"
+    },
+    "it": {
+      "eyebrow": "Scarica la nostra app <span class=\"hl\">gratuita</span>",
+      "appTitle": "Convertitore di valute",
+      "hook": "Calcola e converti con un tocco",
+      "storeSmall": "Scarica su",
+      "free": "Gratis",
+      "trust": "Senza registrazione · funziona offline · installazione in pochi secondi",
+      "features": [
+        [
+          "Tassi in tempo reale · 163+ valute",
+          "Si aggiorna automaticamente ogni ora · funziona offline"
+        ],
+        [
+          "Calcolatrice integrata",
+          "Converti e calcola in un'unica schermata"
+        ],
+        [
+          "Grafici dei tassi storici",
+          "48h · 2 settimane · 1 e 3 mesi"
+        ],
+        [
+          "Widget della schermata Home",
+          "Controlla i tassi senza aprire l'app"
+        ],
+        [
+          "Imposta i tuoi tassi",
+          "Sostituisci i tassi in tempo reale per ogni coppia"
+        ],
+        [
+          "Conversione in blocco",
+          "L'intera lista si aggiorna mentre digiti"
+        ],
+        [
+          "Condividi ricevute PDF",
+          "Esporta qualsiasi conversione in un PDF ordinato"
+        ]
+      ],
+      "a11yTitle": "Banner dell’app",
+      "a11yClose": "Chiudi il banner dell’app",
+      "a11yIcon": "Icona dell’app",
+      "a11yShot": "Screenshot dell’app"
+    },
+    "ja": {
+      "eyebrow": "<span class=\"hl\">無料</span>アプリをダウンロード",
+      "appTitle": "通貨コンバーター",
+      "hook": "ワンタップで計算＆換算",
+      "storeSmall": "ダウンロード：",
+      "free": "無料",
+      "trust": "登録不要 · オフライン対応 · 数秒でインストール",
+      "features": [
+        [
+          "ライブレート · 163+ 通貨",
+          "1時間ごとに自動更新 · オフライン対応"
+        ],
+        [
+          "内蔵電卓",
+          "1画面で換算と計算"
+        ],
+        [
+          "過去のレートチャート",
+          "48h · 2週間 · 1・3か月"
+        ],
+        [
+          "ホーム画面ウィジェット",
+          "開かずにレートをチェック"
+        ],
+        [
+          "自分のレートを設定",
+          "任意のペアのライブレートを上書き"
+        ],
+        [
+          "一括換算",
+          "入力するとリスト全体が更新"
+        ],
+        [
+          "PDF明細を共有",
+          "どの換算もきれいなPDFに書き出し"
+        ]
+      ],
+      "a11yTitle": "アプリバナー",
+      "a11yClose": "アプリバナーを閉じる",
+      "a11yIcon": "アプリアイコン",
+      "a11yShot": "アプリのスクリーンショット"
+    },
+    "kn": {
+      "eyebrow": "ನಮ್ಮ <span class=\"hl\">ಉಚಿತ</span> ಆ್ಯಪ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+      "appTitle": "ಕರೆನ್ಸಿ ಕನ್ವರ್ಟರ್",
+      "hook": "ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ ಲೆಕ್ಕ ಮತ್ತು ಪರಿವರ್ತನೆ",
+      "storeSmall": "ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+      "free": "ಉಚಿತ",
+      "trust": "ಸೈನ್-ಅಪ್ ಇಲ್ಲ · ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ · ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಇನ್‌ಸ್ಟಾಲ್",
+      "features": [
+        [
+          "ಲೈವ್ ದರಗಳು · 163+ ಕರೆನ್ಸಿಗಳು",
+          "ಪ್ರತಿ ಗಂಟೆಗೆ ಸ್ವಯಂ-ರಿಫ್ರೆಶ್ · ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ"
+        ],
+        [
+          "ಅಂತರ್ನಿರ್ಮಿತ ಕ್ಯಾಲ್ಕುಲೇಟರ್",
+          "ಒಂದೇ ಪರದೆಯಲ್ಲಿ ಪರಿವರ್ತಿಸಿ ಮತ್ತು ಲೆಕ್ಕ ಮಾಡಿ"
+        ],
+        [
+          "ಐತಿಹಾಸಿಕ ದರ ಚಾರ್ಟ್‌ಗಳು",
+          "48h · 2 ವಾರ · 1 ಮತ್ತು 3 ತಿಂಗಳು"
+        ],
+        [
+          "ಹೋಮ್ ಸ್ಕ್ರೀನ್ ವಿಜೆಟ್‌ಗಳು",
+          "ತೆರೆಯದೆ ದರಗಳನ್ನು ನೋಡಿ"
+        ],
+        [
+          "ನಿಮ್ಮದೇ ದರಗಳನ್ನು ಹೊಂದಿಸಿ",
+          "ಯಾವುದೇ ಜೋಡಿಗೆ ಲೈವ್ ದರಗಳನ್ನು ಬದಲಾಯಿಸಿ"
+        ],
+        [
+          "ಬ್ಯಾಚ್ ಪರಿವರ್ತನೆ",
+          "ನೀವು ಟೈಪ್ ಮಾಡಿದಂತೆ ನಿಮ್ಮ ಪೂರ್ಣ ಪಟ್ಟಿ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ"
+        ],
+        [
+          "PDF ರಸೀದಿ ಹಂಚಿಕೊಳ್ಳಿ",
+          "ಯಾವುದೇ ಪರಿವರ್ತನೆಯನ್ನು ಸ್ವಚ್ಛ PDF ಗೆ ರಫ್ತು ಮಾಡಿ"
+        ]
+      ],
+      "a11yTitle": "ಆ್ಯಪ್ ಬ್ಯಾನರ್",
+      "a11yClose": "ಆ್ಯಪ್ ಬ್ಯಾನರ್ ಮುಚ್ಚಿ",
+      "a11yIcon": "ಆ್ಯಪ್ ಐಕಾನ್",
+      "a11yShot": "ಆ್ಯಪ್ ಸ್ಕ್ರೀನ್‌ಶಾಟ್"
+    },
+    "ko": {
+      "eyebrow": "<span class=\"hl\">무료</span> 앱을 다운로드하세요",
+      "appTitle": "환율 변환기",
+      "hook": "한 번의 탭으로 계산하고 변환하세요",
+      "storeSmall": "다운로드:",
+      "free": "무료",
+      "trust": "가입 불필요 · 오프라인 작동 · 몇 초 만에 설치",
+      "features": [
+        [
+          "실시간 환율 · 163+ 통화",
+          "매시간 자동 새로고침 · 오프라인 작동"
+        ],
+        [
+          "내장 계산기",
+          "한 화면에서 변환하고 계산하세요"
+        ],
+        [
+          "과거 환율 차트",
+          "48h · 2주 · 1개월 및 3개월"
+        ],
+        [
+          "홈 화면 위젯",
+          "열지 않고 환율을 한눈에"
+        ],
+        [
+          "나만의 환율 설정",
+          "모든 통화쌍의 실시간 환율 재정의"
+        ],
+        [
+          "일괄 변환",
+          "입력하는 대로 전체 목록이 업데이트됩니다"
+        ],
+        [
+          "PDF 영수증 공유",
+          "모든 변환을 깔끔한 PDF로 내보내기"
+        ]
+      ],
+      "a11yTitle": "앱 배너",
+      "a11yClose": "앱 배너 닫기",
+      "a11yIcon": "앱 아이콘",
+      "a11yShot": "앱 스크린샷"
+    },
+    "ml": {
+      "eyebrow": "ഞങ്ങളുടെ <span class=\"hl\">സൗജന്യ</span> ആപ്പ് ഡൗൺലോഡ് ചെയ്യൂ",
+      "appTitle": "കറൻസി കൺവെർട്ടർ",
+      "hook": "ഒരു ടാപ്പിൽ കണക്കാക്കുകയും പരിവർത്തനം ചെയ്യുകയും ചെയ്യുക",
+      "storeSmall": "ഡൗൺലോഡ് ചെയ്യൂ",
+      "free": "സൗജന്യം",
+      "trust": "സൈൻ-അപ്പ് വേണ്ട · ഓഫ്‌ലൈനിൽ പ്രവർത്തിക്കുന്നു · സെക്കൻഡുകൾക്കുള്ളിൽ ഇൻസ്റ്റാൾ",
+      "features": [
+        [
+          "തത്സമയ നിരക്കുകൾ · 163+ കറൻസികൾ",
+          "ഓരോ മണിക്കൂറിലും സ്വയമേവ പുതുക്കുന്നു · ഓഫ്‌ലൈനിൽ പ്രവർത്തിക്കുന്നു"
+        ],
+        [
+          "ബിൽറ്റ്-ഇൻ കാൽക്കുലേറ്റർ",
+          "ഒരു സ്ക്രീനിൽ പരിവർത്തനവും കണക്കുകൂട്ടലും"
+        ],
+        [
+          "ചരിത്ര നിരക്ക് ചാർട്ടുകൾ",
+          "48h · 2 ആഴ്ച · 1, 3 മാസം"
+        ],
+        [
+          "ഹോം സ്ക്രീൻ വിജറ്റുകൾ",
+          "തുറക്കാതെ നിരക്കുകൾ കാണുക"
+        ],
+        [
+          "നിങ്ങളുടെ നിരക്കുകൾ സജ്ജമാക്കുക",
+          "ഏത് ജോഡിക്കും തത്സമയ നിരക്ക് മാറ്റുക"
+        ],
+        [
+          "ബാച്ച് പരിവർത്തനം",
+          "നിങ്ങൾ ടൈപ്പ് ചെയ്യുമ്പോൾ മുഴുവൻ പട്ടികയും അപ്‌ഡേറ്റ് ആകുന്നു"
+        ],
+        [
+          "PDF രസീതുകൾ പങ്കിടുക",
+          "ഏത് പരിവർത്തനവും വൃത്തിയുള്ള PDF ആയി കയറ്റുമതി ചെയ്യുക"
+        ]
+      ],
+      "a11yTitle": "ആപ്പ് ബാനർ",
+      "a11yClose": "ആപ്പ് ബാനർ അടയ്ക്കുക",
+      "a11yIcon": "ആപ്പ് ഐക്കൺ",
+      "a11yShot": "ആപ്പ് സ്ക്രീൻഷോട്ട്"
+    },
+    "mr": {
+      "eyebrow": "आमचे <span class=\"hl\">मोफत</span> अ‍ॅप डाउनलोड करा",
+      "appTitle": "चलन रूपांतरक",
+      "hook": "एका टॅपमध्ये गणना करा आणि रूपांतरित करा",
+      "storeSmall": "डाउनलोड करा",
+      "free": "मोफत",
+      "trust": "साइन-अप नाही · ऑफलाइन चालते · सेकंदात इंस्टॉल",
+      "features": [
+        [
+          "थेट दर · 163+ चलने",
+          "दर तासाला स्वयं-रिफ्रेश · ऑफलाइन चालते"
+        ],
+        [
+          "अंगभूत कॅल्क्युलेटर",
+          "एकाच स्क्रीनवर रूपांतर आणि गणना करा"
+        ],
+        [
+          "ऐतिहासिक दर तक्ते",
+          "48h · 2 आठवडे · 1 आणि 3 महिने"
+        ],
+        [
+          "होम स्क्रीन विजेट्स",
+          "न उघडता दर पाहा"
+        ],
+        [
+          "तुमचे स्वतःचे दर सेट करा",
+          "कोणत्याही जोडीसाठी थेट दर बदला"
+        ],
+        [
+          "बॅच रूपांतर",
+          "तुम्ही टाइप करताच संपूर्ण यादी अपडेट होते"
+        ],
+        [
+          "PDF पावत्या शेअर करा",
+          "कोणतेही रूपांतर स्वच्छ PDF मध्ये निर्यात करा"
+        ]
+      ],
+      "a11yTitle": "अ‍ॅप बॅनर",
+      "a11yClose": "अ‍ॅप बॅनर बंद करा",
+      "a11yIcon": "अ‍ॅप आयकॉन",
+      "a11yShot": "अ‍ॅप स्क्रीनशॉट"
+    },
+    "ms": {
+      "eyebrow": "Muat turun apl <span class=\"hl\">percuma</span> kami",
+      "appTitle": "Penukar Mata Wang",
+      "hook": "Kira & tukar dengan satu ketikan",
+      "storeSmall": "Muat turun di",
+      "free": "Percuma",
+      "trust": "Tanpa pendaftaran · berfungsi luar talian · pasang dalam beberapa saat",
+      "features": [
+        [
+          "Kadar langsung · 163+ mata wang",
+          "Muat semula automatik setiap jam · berfungsi luar talian"
+        ],
+        [
+          "Kalkulator terbina dalam",
+          "Tukar dan kira dalam satu skrin"
+        ],
+        [
+          "Carta kadar sejarah",
+          "48h · 2 minggu · 1 dan 3 bulan"
+        ],
+        [
+          "Widget skrin utama",
+          "Lihat kadar tanpa membuka aplikasi"
+        ],
+        [
+          "Tetapkan kadar anda sendiri",
+          "Ganti kadar langsung untuk sebarang pasangan"
+        ],
+        [
+          "Penukaran pukal",
+          "Seluruh senarai anda dikemas kini semasa anda menaip"
+        ],
+        [
+          "Kongsi resit PDF",
+          "Eksport sebarang penukaran ke PDF yang kemas"
+        ]
+      ],
+      "a11yTitle": "Sepanduk apl",
+      "a11yClose": "Tutup sepanduk apl",
+      "a11yIcon": "Ikon apl",
+      "a11yShot": "Tangkapan skrin apl"
+    },
+    "nb": {
+      "eyebrow": "Last ned vår <span class=\"hl\">gratis</span> app",
+      "appTitle": "Valutakalkulator",
+      "hook": "Regn ut og konverter med ett trykk",
+      "storeSmall": "Last ned på",
+      "free": "Gratis",
+      "trust": "Ingen registrering · fungerer offline · installeres på sekunder",
+      "features": [
+        [
+          "Sanntidskurser · 163+ valutaer",
+          "Oppdateres automatisk hver time · fungerer offline"
+        ],
+        [
+          "Innebygd kalkulator",
+          "Konverter og regn på én skjerm"
+        ],
+        [
+          "Historiske kursdiagrammer",
+          "48h · 2 uker · 1 og 3 måneder"
+        ],
+        [
+          "Widgeter på startskjermen",
+          "Se kursene uten å åpne appen"
+        ],
+        [
+          "Angi dine egne kurser",
+          "Overstyr sanntidskurser for ethvert par"
+        ],
+        [
+          "Konvertering i bulk",
+          "Hele listen din oppdateres mens du skriver"
+        ],
+        [
+          "Del PDF-kvitteringer",
+          "Eksporter enhver konvertering til en ren PDF"
+        ]
+      ],
+      "a11yTitle": "App-banner",
+      "a11yClose": "Lukk app-banner",
+      "a11yIcon": "App-ikon",
+      "a11yShot": "App-skjermbilde"
+    },
+    "nl": {
+      "eyebrow": "Download onze <span class=\"hl\">gratis</span> app",
+      "appTitle": "Valutaomrekenaar",
+      "hook": "Reken en converteer met één tik",
+      "storeSmall": "Downloaden in de",
+      "free": "Gratis",
+      "trust": "Geen registratie · werkt offline · in seconden geïnstalleerd",
+      "features": [
+        [
+          "Live koersen · 163+ valuta's",
+          "Vernieuwt automatisch elk uur · werkt offline"
+        ],
+        [
+          "Ingebouwde rekenmachine",
+          "Converteer en reken op één scherm"
+        ],
+        [
+          "Historische koersgrafieken",
+          "48h · 2 weken · 1 en 3 maanden"
+        ],
+        [
+          "Widgets op het beginscherm",
+          "Bekijk koersen zonder de app te openen"
+        ],
+        [
+          "Stel je eigen koersen in",
+          "Overschrijf live koersen voor elk paar"
+        ],
+        [
+          "Batchconversie",
+          "Je hele lijst wordt bijgewerkt terwijl je typt"
+        ],
+        [
+          "Deel PDF-bonnetjes",
+          "Exporteer elke omrekening naar een strak PDF"
+        ]
+      ],
+      "a11yTitle": "App-banner",
+      "a11yClose": "App-banner sluiten",
+      "a11yIcon": "App-pictogram",
+      "a11yShot": "App-schermafbeelding"
+    },
+    "or": {
+      "eyebrow": "ଆମର <span class=\"hl\">ମାଗଣା</span> ଆପ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+      "appTitle": "ମୁଦ୍ରା କନଭର୍ଟର",
+      "hook": "ଗୋଟିଏ ଟାପରେ ଗଣନା ଓ ରୂପାନ୍ତର କରନ୍ତୁ",
+      "storeSmall": "ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+      "free": "ମାଗଣା",
+      "trust": "ସାଇନ୍-ଅପ୍ ନାହିଁ · ଅଫଲାଇନ୍‌ରେ କାମ କରେ · ସେକେଣ୍ଡରେ ଇନଷ୍ଟଲ୍",
+      "features": [
+        [
+          "ଲାଇଭ୍ ଦର · 163+ ମୁଦ୍ରା",
+          "ପ୍ରତି ଘଣ୍ଟାରେ ସ୍ୱୟଂ-ରିଫ୍ରେସ୍ · ଅଫଲାଇନ୍‌ରେ କାମ କରେ"
+        ],
+        [
+          "ବିଲ୍ଟ-ଇନ୍ କାଲକୁଲେଟର",
+          "ଗୋଟିଏ ସ୍କ୍ରିନରେ ରୂପାନ୍ତର ଓ ଗଣନା କରନ୍ତୁ"
+        ],
+        [
+          "ଐତିହାସିକ ଦର ଚାର୍ଟ",
+          "48h · 2 ସପ୍ତାହ · 1 ଓ 3 ମାସ"
+        ],
+        [
+          "ହୋମ୍ ସ୍କ୍ରିନ୍ ୱିଜେଟ୍",
+          "ନ ଖୋଲି ଦର ଦେଖନ୍ତୁ"
+        ],
+        [
+          "ନିଜର ଦର ସେଟ୍ କରନ୍ତୁ",
+          "ଯେକୌଣସି ଯୋଡ଼ି ପାଇଁ ଲାଇଭ୍ ଦର ବଦଳାନ୍ତୁ"
+        ],
+        [
+          "ବ୍ୟାଚ୍ ରୂପାନ୍ତର",
+          "ଆପଣ ଟାଇପ୍ କଲାବେଳେ ପୂରା ତାଲିକା ଅପଡେଟ୍ ହୁଏ"
+        ],
+        [
+          "PDF ରସିଦ ସେୟାର କରନ୍ତୁ",
+          "ଯେକୌଣସି ରୂପାନ୍ତରକୁ ସ୍ୱଚ୍ଛ PDF‌କୁ ରପ୍ତାନି କରନ୍ତୁ"
+        ]
+      ],
+      "a11yTitle": "ଆପ୍ ବ୍ୟାନର୍",
+      "a11yClose": "ଆପ୍ ବ୍ୟାନର୍ ବନ୍ଦ କରନ୍ତୁ",
+      "a11yIcon": "ଆପ୍ ଆଇକନ୍",
+      "a11yShot": "ଆପ୍ ସ୍କ୍ରିନ୍‌ସଟ୍"
+    },
+    "pa": {
+      "eyebrow": "ਸਾਡੀ <span class=\"hl\">ਮੁਫ਼ਤ</span> ਐਪ ਡਾਊਨਲੋਡ ਕਰੋ",
+      "appTitle": "ਕਰੰਸੀ ਕਨਵਰਟਰ",
+      "hook": "ਇੱਕ ਟੈਪ ਵਿੱਚ ਗਿਣੋ ਅਤੇ ਬਦਲੋ",
+      "storeSmall": "ਡਾਊਨਲੋਡ ਕਰੋ",
+      "free": "ਮੁਫ਼ਤ",
+      "trust": "ਸਾਈਨ-ਅੱਪ ਨਹੀਂ · ਆਫਲਾਈਨ ਕੰਮ ਕਰਦਾ ਹੈ · ਸਕਿੰਟਾਂ ਵਿੱਚ ਇੰਸਟਾਲ",
+      "features": [
+        [
+          "ਲਾਈਵ ਰੇਟ · 163+ ਕਰੰਸੀਆਂ",
+          "ਹਰ ਘੰਟੇ ਆਟੋ-ਰਿਫ੍ਰੈਸ਼ · ਆਫਲਾਈਨ ਕੰਮ ਕਰਦਾ ਹੈ"
+        ],
+        [
+          "ਬਿਲਟ-ਇਨ ਕੈਲਕੁਲੇਟਰ",
+          "ਇੱਕ ਸਕਰੀਨ 'ਤੇ ਬਦਲੋ ਅਤੇ ਗਿਣੋ"
+        ],
+        [
+          "ਇਤਿਹਾਸਕ ਰੇਟ ਚਾਰਟ",
+          "48h · 2 ਹਫ਼ਤੇ · 1 ਅਤੇ 3 ਮਹੀਨੇ"
+        ],
+        [
+          "ਹੋਮ ਸਕਰੀਨ ਵਿਜੇਟ",
+          "ਖੋਲ੍ਹੇ ਬਿਨਾਂ ਰੇਟ ਵੇਖੋ"
+        ],
+        [
+          "ਆਪਣੇ ਰੇਟ ਸੈੱਟ ਕਰੋ",
+          "ਕਿਸੇ ਵੀ ਜੋੜੇ ਲਈ ਲਾਈਵ ਰੇਟ ਬਦਲੋ"
+        ],
+        [
+          "ਬੈਚ ਬਦਲਾਅ",
+          "ਜਿਵੇਂ ਤੁਸੀਂ ਟਾਈਪ ਕਰਦੇ ਹੋ ਪੂਰੀ ਸੂਚੀ ਅੱਪਡੇਟ ਹੁੰਦੀ ਹੈ"
+        ],
+        [
+          "PDF ਰਸੀਦਾਂ ਸਾਂਝੀਆਂ ਕਰੋ",
+          "ਕਿਸੇ ਵੀ ਬਦਲਾਅ ਨੂੰ ਸਾਫ਼ PDF ਵਿੱਚ ਨਿਰਯਾਤ ਕਰੋ"
+        ]
+      ],
+      "a11yTitle": "ਐਪ ਬੈਨਰ",
+      "a11yClose": "ਐਪ ਬੈਨਰ ਬੰਦ ਕਰੋ",
+      "a11yIcon": "ਐਪ ਆਈਕਨ",
+      "a11yShot": "ਐਪ ਸਕ੍ਰੀਨਸ਼ਾਟ"
+    },
+    "pl": {
+      "eyebrow": "Pobierz naszą <span class=\"hl\">darmową</span> aplikację",
+      "appTitle": "Przelicznik walut",
+      "hook": "Oblicz i przelicz jednym dotknięciem",
+      "storeSmall": "Pobierz z",
+      "free": "Za darmo",
+      "trust": "Bez rejestracji · działa offline · instalacja w kilka sekund",
+      "features": [
+        [
+          "Kursy na żywo · 163+ walut",
+          "Automatyczne odświeżanie co godzinę · działa offline"
+        ],
+        [
+          "Wbudowany kalkulator",
+          "Przeliczaj i licz na jednym ekranie"
+        ],
+        [
+          "Wykresy kursów historycznych",
+          "48h · 2 tygodnie · 1 i 3 miesiące"
+        ],
+        [
+          "Widżety na ekranie głównym",
+          "Sprawdzaj kursy bez otwierania"
+        ],
+        [
+          "Ustaw własne kursy",
+          "Zastąp kursy na żywo dla dowolnej pary"
+        ],
+        [
+          "Przeliczanie zbiorcze",
+          "Cała lista aktualizuje się podczas pisania"
+        ],
+        [
+          "Udostępniaj paragony PDF",
+          "Eksportuj każde przeliczenie do schludnego PDF"
+        ]
+      ],
+      "a11yTitle": "Baner aplikacji",
+      "a11yClose": "Zamknij baner aplikacji",
+      "a11yIcon": "Ikona aplikacji",
+      "a11yShot": "Zrzut ekranu aplikacji"
+    },
+    "pt": {
+      "eyebrow": "Baixe nosso app <span class=\"hl\">grátis</span>",
+      "appTitle": "Conversor de moedas",
+      "hook": "Calcule e converta com um toque",
+      "storeSmall": "Baixe na",
+      "free": "Grátis",
+      "trust": "Sem cadastro · funciona offline · instalação em segundos",
+      "features": [
+        [
+          "Taxas ao vivo · 163+ moedas",
+          "Atualização automática a cada hora · funciona offline"
+        ],
+        [
+          "Calculadora integrada",
+          "Converta e calcule em uma só tela"
+        ],
+        [
+          "Gráficos de taxas históricas",
+          "48h · 2 semanas · 1 e 3 meses"
+        ],
+        [
+          "Widgets da tela inicial",
+          "Veja as taxas sem abrir o app"
+        ],
+        [
+          "Defina suas próprias taxas",
+          "Substitua as taxas ao vivo de qualquer par"
+        ],
+        [
+          "Conversão em lote",
+          "Toda a sua lista é atualizada enquanto você digita"
+        ],
+        [
+          "Compartilhe recibos em PDF",
+          "Exporte qualquer conversão para um PDF limpo"
+        ]
+      ],
+      "a11yTitle": "Banner do app",
+      "a11yClose": "Fechar banner do app",
+      "a11yIcon": "Ícone do app",
+      "a11yShot": "Captura de tela do app"
+    },
+    "ro": {
+      "eyebrow": "Descarcă aplicația noastră <span class=\"hl\">gratuită</span>",
+      "appTitle": "Convertor valutar",
+      "hook": "Calculează și convertește dintr-o atingere",
+      "storeSmall": "Descarcă din",
+      "free": "Gratuit",
+      "trust": "Fără înregistrare · funcționează offline · instalare în câteva secunde",
+      "features": [
+        [
+          "Cursuri live · 163+ valute",
+          "Se actualizează automat din oră în oră · funcționează offline"
+        ],
+        [
+          "Calculator încorporat",
+          "Convertește și calculează pe un singur ecran"
+        ],
+        [
+          "Grafice cu cursuri istorice",
+          "48h · 2 săptămâni · 1 și 3 luni"
+        ],
+        [
+          "Widgeturi pe ecranul principal",
+          "Vezi cursurile fără să deschizi aplicația"
+        ],
+        [
+          "Setează-ți propriile cursuri",
+          "Suprascrie cursurile live pentru orice pereche"
+        ],
+        [
+          "Conversie în masă",
+          "Toată lista ta se actualizează pe măsură ce scrii"
+        ],
+        [
+          "Partajează chitanțe PDF",
+          "Exportă orice conversie într-un PDF îngrijit"
+        ]
+      ],
+      "a11yTitle": "Banner aplicație",
+      "a11yClose": "Închide bannerul aplicației",
+      "a11yIcon": "Pictogramă aplicație",
+      "a11yShot": "Captură de ecran aplicație"
+    },
+    "ru": {
+      "eyebrow": "Скачайте наше <span class=\"hl\">бесплатное</span> приложение",
+      "appTitle": "Конвертер валют",
+      "hook": "Считайте и конвертируйте одним касанием",
+      "storeSmall": "Загрузите в",
+      "free": "Бесплатно",
+      "trust": "Без регистрации · работает офлайн · установка за секунды",
+      "features": [
+        [
+          "Курсы в реальном времени · 163+ валют",
+          "Автообновление каждый час · работает офлайн"
+        ],
+        [
+          "Встроенный калькулятор",
+          "Конвертируйте и считайте на одном экране"
+        ],
+        [
+          "Графики исторических курсов",
+          "48h · 2 недели · 1 и 3 месяца"
+        ],
+        [
+          "Виджеты на главном экране",
+          "Смотрите курсы, не открывая приложение"
+        ],
+        [
+          "Задайте свои курсы",
+          "Переопределите курсы для любой пары"
+        ],
+        [
+          "Пакетная конвертация",
+          "Весь список обновляется по мере ввода"
+        ],
+        [
+          "Делитесь PDF-квитанциями",
+          "Экспортируйте любую конвертацию в аккуратный PDF"
+        ]
+      ],
+      "a11yTitle": "Баннер приложения",
+      "a11yClose": "Закрыть баннер приложения",
+      "a11yIcon": "Значок приложения",
+      "a11yShot": "Скриншот приложения"
+    },
+    "sk": {
+      "eyebrow": "Stiahnite si našu <span class=\"hl\">bezplatnú</span> aplikáciu",
+      "appTitle": "Prevodník mien",
+      "hook": "Vypočítajte a preveďte jedným ťuknutím",
+      "storeSmall": "Stiahnuť z",
+      "free": "Zadarmo",
+      "trust": "Bez registrácie · funguje offline · inštalácia za pár sekúnd",
+      "features": [
+        [
+          "Živé kurzy · 163+ mien",
+          "Automatická aktualizácia každú hodinu · funguje offline"
+        ],
+        [
+          "Zabudovaná kalkulačka",
+          "Preveďte a počítajte na jednej obrazovke"
+        ],
+        [
+          "Grafy historických kurzov",
+          "48h · 2 týždne · 1 a 3 mesiace"
+        ],
+        [
+          "Widgety na domovskej obrazovke",
+          "Pozrite si kurzy bez otvárania"
+        ],
+        [
+          "Nastavte si vlastné kurzy",
+          "Prepíšte živé kurzy pre ľubovoľný pár"
+        ],
+        [
+          "Hromadný prevod",
+          "Celý zoznam sa aktualizuje počas písania"
+        ],
+        [
+          "Zdieľajte účtenky v PDF",
+          "Exportujte akýkoľvek prevod do čistého PDF"
+        ]
+      ],
+      "a11yTitle": "Banner aplikácie",
+      "a11yClose": "Zavrieť banner aplikácie",
+      "a11yIcon": "Ikona aplikácie",
+      "a11yShot": "Snímka aplikácie"
+    },
+    "sl": {
+      "eyebrow": "Prenesite našo <span class=\"hl\">brezplačno</span> aplikacijo",
+      "appTitle": "Pretvornik valut",
+      "hook": "Izračunajte in pretvorite z enim dotikom",
+      "storeSmall": "Prenesite v",
+      "free": "Brezplačno",
+      "trust": "Brez registracije · deluje brez povezave · namestitev v nekaj sekundah",
+      "features": [
+        [
+          "Tečaji v živo · 163+ valut",
+          "Samodejno osveževanje vsako uro · deluje brez povezave"
+        ],
+        [
+          "Vgrajen kalkulator",
+          "Pretvarjajte in računajte na enem zaslonu"
+        ],
+        [
+          "Grafi zgodovinskih tečajev",
+          "48h · 2 tedna · 1 in 3 mesece"
+        ],
+        [
+          "Pripomočki na začetnem zaslonu",
+          "Poglejte tečaje brez odpiranja"
+        ],
+        [
+          "Nastavite lastne tečaje",
+          "Prepišite tečaje v živo za kateri koli par"
+        ],
+        [
+          "Paketna pretvorba",
+          "Celoten seznam se posodablja med tipkanjem"
+        ],
+        [
+          "Delite potrdila PDF",
+          "Izvozite katero koli pretvorbo v čist PDF"
+        ]
+      ],
+      "a11yTitle": "Pasica aplikacije",
+      "a11yClose": "Zapri pasico aplikacije",
+      "a11yIcon": "Ikona aplikacije",
+      "a11yShot": "Posnetek zaslona aplikacije"
+    },
+    "sv": {
+      "eyebrow": "Ladda ner vår <span class=\"hl\">gratis</span> app",
+      "appTitle": "Valutaomvandlare",
+      "hook": "Beräkna och konvertera med en tryckning",
+      "storeSmall": "Ladda ner på",
+      "free": "Gratis",
+      "trust": "Ingen registrering · fungerar offline · installeras på sekunder",
+      "features": [
+        [
+          "Realtidskurser · 163+ valutor",
+          "Uppdateras automatiskt varje timme · fungerar offline"
+        ],
+        [
+          "Inbyggd kalkylator",
+          "Konvertera och räkna på en skärm"
+        ],
+        [
+          "Diagram över historiska kurser",
+          "48h · 2 veckor · 1 och 3 månader"
+        ],
+        [
+          "Widgetar på hemskärmen",
+          "Se kurserna utan att öppna appen"
+        ],
+        [
+          "Ange dina egna kurser",
+          "Åsidosätt realtidskurser för valfritt par"
+        ],
+        [
+          "Batchkonvertering",
+          "Hela din lista uppdateras medan du skriver"
+        ],
+        [
+          "Dela PDF-kvitton",
+          "Exportera valfri konvertering till en ren PDF"
+        ]
+      ],
+      "a11yTitle": "Appbanner",
+      "a11yClose": "Stäng appbanner",
+      "a11yIcon": "Appikon",
+      "a11yShot": "App-skärmbild"
+    },
+    "ta": {
+      "eyebrow": "எங்கள் <span class=\"hl\">இலவச</span> ஆப்பைப் பதிவிறக்குங்கள்",
+      "appTitle": "நாணய மாற்றி",
+      "hook": "ஒரே தட்டலில் கணக்கிட்டு மாற்றவும்",
+      "storeSmall": "பதிவிறக்குங்கள்",
+      "free": "இலவசம்",
+      "trust": "பதிவு தேவையில்லை · ஆஃப்லைனில் இயங்கும் · வினாடிகளில் நிறுவவும்",
+      "features": [
+        [
+          "நேரலை விகிதங்கள் · 163+ நாணயங்கள்",
+          "ஒவ்வொரு மணி நேரமும் தானாக புதுப்பிக்கும் · ஆஃப்லைனில் இயங்கும்"
+        ],
+        [
+          "உள்ளமைந்த கால்குலேட்டர்",
+          "ஒரே திரையில் மாற்றி கணக்கிடுங்கள்"
+        ],
+        [
+          "வரலாற்று விகித வரைபடங்கள்",
+          "48h · 2 வாரங்கள் · 1 மற்றும் 3 மாதங்கள்"
+        ],
+        [
+          "முகப்புத் திரை விட்ஜெட்டுகள்",
+          "திறக்காமல் விகிதங்களைப் பாருங்கள்"
+        ],
+        [
+          "உங்கள் சொந்த விகிதங்களை அமைக்கவும்",
+          "எந்த ஜோடிக்கும் நேரலை விகிதங்களை மாற்றவும்"
+        ],
+        [
+          "தொகுதி மாற்றம்",
+          "நீங்கள் தட்டச்சு செய்யும்போது உங்கள் முழு பட்டியலும் புதுப்பிக்கும்"
+        ],
+        [
+          "PDF ரசீதுகளைப் பகிரவும்",
+          "எந்த மாற்றத்தையும் சுத்தமான PDF ஆக ஏற்றுமதி செய்யவும்"
+        ]
+      ],
+      "a11yTitle": "ஆப் பேனர்",
+      "a11yClose": "ஆப் பேனரை மூடு",
+      "a11yIcon": "ஆப் ஐகான்",
+      "a11yShot": "ஆப் ஸ்கிரீன்ஷாட்"
+    },
+    "te": {
+      "eyebrow": "మా <span class=\"hl\">ఉచిత</span> యాప్‌ను డౌన్‌లోడ్ చేయండి",
+      "appTitle": "కరెన్సీ కన్వర్టర్",
+      "hook": "ఒకే ట్యాప్‌లో లెక్కించండి & మార్చండి",
+      "storeSmall": "డౌన్‌లోడ్ చేయండి",
+      "free": "ఉచితం",
+      "trust": "సైన్-అప్ అవసరం లేదు · ఆఫ్‌లైన్‌లో పనిచేస్తుంది · సెకన్లలో ఇన్‌స్టాల్",
+      "features": [
+        [
+          "లైవ్ రేట్లు · 163+ కరెన్సీలు",
+          "ప్రతి గంటకు స్వయంచాలకంగా రిఫ్రెష్ · ఆఫ్‌లైన్‌లో పనిచేస్తుంది"
+        ],
+        [
+          "అంతర్నిర్మిత కాలిక్యులేటర్",
+          "ఒకే స్క్రీన్‌లో మార్చండి, లెక్కించండి"
+        ],
+        [
+          "చారిత్రక రేటు చార్టులు",
+          "48h · 2 వారాలు · 1 & 3 నెలలు"
+        ],
+        [
+          "హోమ్ స్క్రీన్ విడ్జెట్‌లు",
+          "తెరవకుండా రేట్లను చూడండి"
+        ],
+        [
+          "మీ స్వంత రేట్లను సెట్ చేయండి",
+          "ఏ జతకైనా లైవ్ రేట్లను మార్చండి"
+        ],
+        [
+          "బ్యాచ్ మార్పిడి",
+          "మీరు టైప్ చేస్తున్నప్పుడే మీ మొత్తం జాబితా అప్‌డేట్ అవుతుంది"
+        ],
+        [
+          "PDF రసీదులను షేర్ చేయండి",
+          "ఏదైనా మార్పిడిని శుభ్రమైన PDFకి ఎగుమతి చేయండి"
+        ]
+      ],
+      "a11yTitle": "యాప్ బ్యానర్",
+      "a11yClose": "యాప్ బ్యానర్ మూసివేయండి",
+      "a11yIcon": "యాప్ ఐకాన్",
+      "a11yShot": "యాప్ స్క్రీన్‌షాట్"
+    },
+    "th": {
+      "eyebrow": "ดาวน์โหลดแอป <span class=\"hl\">ฟรี</span> ของเรา",
+      "appTitle": "ตัวแปลงสกุลเงิน",
+      "hook": "คำนวณและแปลงได้ในแตะเดียว",
+      "storeSmall": "ดาวน์โหลดบน",
+      "free": "ฟรี",
+      "trust": "ไม่ต้องสมัคร · ใช้งานออฟไลน์ได้ · ติดตั้งในไม่กี่วินาที",
+      "features": [
+        [
+          "อัตราสด · 163+ สกุลเงิน",
+          "รีเฟรชอัตโนมัติทุกชั่วโมง · ใช้งานออฟไลน์ได้"
+        ],
+        [
+          "เครื่องคิดเลขในตัว",
+          "แปลงและคำนวณในหน้าจอเดียว"
+        ],
+        [
+          "กราฟอัตราย้อนหลัง",
+          "48h · 2 สัปดาห์ · 1 และ 3 เดือน"
+        ],
+        [
+          "วิดเจ็ตหน้าจอหลัก",
+          "ดูอัตราได้โดยไม่ต้องเปิดแอป"
+        ],
+        [
+          "ตั้งอัตราของคุณเอง",
+          "แทนที่อัตราสดสำหรับคู่ใดก็ได้"
+        ],
+        [
+          "แปลงเป็นชุด",
+          "ทั้งรายการอัปเดตขณะที่คุณพิมพ์"
+        ],
+        [
+          "แชร์ใบเสร็จ PDF",
+          "ส่งออกการแปลงใดๆ เป็น PDF ที่สะอาดตา"
+        ]
+      ],
+      "a11yTitle": "แบนเนอร์แอป",
+      "a11yClose": "ปิดแบนเนอร์แอป",
+      "a11yIcon": "ไอคอนแอป",
+      "a11yShot": "ภาพหน้าจอแอป"
+    },
+    "tr": {
+      "eyebrow": "<span class=\"hl\">Ücretsiz</span> uygulamamızı indirin",
+      "appTitle": "Döviz Çevirici",
+      "hook": "Tek dokunuşla hesaplayın ve çevirin",
+      "storeSmall": "Şuradan indirin:",
+      "free": "Ücretsiz",
+      "trust": "Kayıt yok · çevrimdışı çalışır · saniyeler içinde kurulur",
+      "features": [
+        [
+          "Canlı kurlar · 163+ para birimi",
+          "Her saat otomatik yenilenir · çevrimdışı çalışır"
+        ],
+        [
+          "Yerleşik hesap makinesi",
+          "Tek ekranda çevirin ve hesaplayın"
+        ],
+        [
+          "Geçmiş kur grafikleri",
+          "48h · 2 hafta · 1 ve 3 ay"
+        ],
+        [
+          "Ana ekran widget'ları",
+          "Açmadan kurlara göz atın"
+        ],
+        [
+          "Kendi kurlarınızı belirleyin",
+          "Herhangi bir çift için canlı kurları geçersiz kılın"
+        ],
+        [
+          "Toplu çeviri",
+          "Siz yazdıkça tüm listeniz güncellenir"
+        ],
+        [
+          "PDF makbuzları paylaşın",
+          "Herhangi bir çeviriyi temiz bir PDF olarak dışa aktarın"
+        ]
+      ],
+      "a11yTitle": "Uygulama afişi",
+      "a11yClose": "Uygulama afişini kapat",
+      "a11yIcon": "Uygulama simgesi",
+      "a11yShot": "Uygulama ekran görüntüsü"
+    },
+    "uk": {
+      "eyebrow": "Завантажте наш <span class=\"hl\">безкоштовний</span> застосунок",
+      "appTitle": "Конвертер валют",
+      "hook": "Рахуйте та конвертуйте одним дотиком",
+      "storeSmall": "Завантажте в",
+      "free": "Безкоштовно",
+      "trust": "Без реєстрації · працює офлайн · встановлення за секунди",
+      "features": [
+        [
+          "Курси наживо · 163+ валют",
+          "Автооновлення щогодини · працює офлайн"
+        ],
+        [
+          "Вбудований калькулятор",
+          "Конвертуйте й рахуйте на одному екрані"
+        ],
+        [
+          "Графіки історичних курсів",
+          "48h · 2 тижні · 1 і 3 місяці"
+        ],
+        [
+          "Віджети на головному екрані",
+          "Дивіться курси, не відкриваючи застосунок"
+        ],
+        [
+          "Задайте власні курси",
+          "Перевизначте курси наживо для будь-якої пари"
+        ],
+        [
+          "Пакетна конвертація",
+          "Увесь список оновлюється під час введення"
+        ],
+        [
+          "Діліться PDF-квитанціями",
+          "Експортуйте будь-яку конвертацію в охайний PDF"
+        ]
+      ],
+      "a11yTitle": "Банер застосунку",
+      "a11yClose": "Закрити банер застосунку",
+      "a11yIcon": "Значок застосунку",
+      "a11yShot": "Знімок екрана застосунку"
+    },
+    "ur": {
+      "dir": "rtl",
+      "eyebrow": "ہماری <span class=\"hl\">مفت</span> ایپ ڈاؤن لوڈ کریں",
+      "appTitle": "کرنسی کنورٹر",
+      "hook": "ایک ٹیپ میں حساب لگائیں اور تبدیل کریں",
+      "storeSmall": "ڈاؤن لوڈ کریں",
+      "free": "مفت",
+      "trust": "سائن اپ نہیں · آف لائن کام کرتا ہے · سیکنڈوں میں انسٹال",
+      "features": [
+        [
+          "لائیو ریٹس · 163+ کرنسیاں",
+          "ہر گھنٹے خودکار ریفریش · آف لائن کام کرتا ہے"
+        ],
+        [
+          "بلٹ ان کیلکولیٹر",
+          "ایک ہی اسکرین پر تبدیل اور حساب کریں"
+        ],
+        [
+          "تاریخی ریٹ چارٹس",
+          "48h · 2 ہفتے · 1 اور 3 ماہ"
+        ],
+        [
+          "ہوم اسکرین ویجٹس",
+          "کھولے بغیر ریٹس دیکھیں"
+        ],
+        [
+          "اپنے ریٹس مقرر کریں",
+          "کسی بھی جوڑے کے لیے لائیو ریٹس تبدیل کریں"
+        ],
+        [
+          "بیچ کنورژن",
+          "جیسے ہی آپ ٹائپ کرتے ہیں پوری فہرست اپ ڈیٹ ہوتی ہے"
+        ],
+        [
+          "PDF رسیدیں شیئر کریں",
+          "کسی بھی تبدیلی کو صاف ستھری PDF میں ایکسپورٹ کریں"
+        ]
+      ],
+      "a11yTitle": "ایپ بینر",
+      "a11yClose": "ایپ بینر بند کریں",
+      "a11yIcon": "ایپ آئیکن",
+      "a11yShot": "ایپ اسکرین شاٹ"
+    },
+    "vi": {
+      "eyebrow": "Tải ứng dụng <span class=\"hl\">miễn phí</span> của chúng tôi",
+      "appTitle": "Trình chuyển đổi tiền tệ",
+      "hook": "Tính toán & chuyển đổi chỉ với một chạm",
+      "storeSmall": "Tải xuống trên",
+      "free": "Miễn phí",
+      "trust": "Không cần đăng ký · hoạt động ngoại tuyến · cài đặt trong vài giây",
+      "features": [
+        [
+          "Tỷ giá trực tiếp · 163+ tiền tệ",
+          "Tự động làm mới mỗi giờ · hoạt động ngoại tuyến"
+        ],
+        [
+          "Máy tính tích hợp",
+          "Chuyển đổi và tính toán trên một màn hình"
+        ],
+        [
+          "Biểu đồ tỷ giá lịch sử",
+          "48h · 2 tuần · 1 và 3 tháng"
+        ],
+        [
+          "Tiện ích màn hình chính",
+          "Xem tỷ giá mà không cần mở ứng dụng"
+        ],
+        [
+          "Đặt tỷ giá của riêng bạn",
+          "Ghi đè tỷ giá trực tiếp cho mọi cặp"
+        ],
+        [
+          "Chuyển đổi hàng loạt",
+          "Toàn bộ danh sách cập nhật khi bạn nhập"
+        ],
+        [
+          "Chia sẻ biên lai PDF",
+          "Xuất mọi chuyển đổi ra PDF gọn gàng"
+        ]
+      ],
+      "a11yTitle": "Biểu ngữ ứng dụng",
+      "a11yClose": "Đóng biểu ngữ ứng dụng",
+      "a11yIcon": "Biểu tượng ứng dụng",
+      "a11yShot": "Ảnh chụp màn hình ứng dụng"
+    },
+    "zh-Hans": {
+      "eyebrow": "下载我们的<span class=\"hl\">免费</span>应用",
+      "appTitle": "货币转换器",
+      "hook": "一键计算与换算",
+      "storeSmall": "下载于",
+      "free": "免费",
+      "trust": "无需注册 · 离线可用 · 数秒安装",
+      "features": [
+        [
+          "实时汇率 · 163+ 种货币",
+          "每小时自动刷新 · 离线可用"
+        ],
+        [
+          "内置计算器",
+          "在一个屏幕上换算与计算"
+        ],
+        [
+          "历史汇率图表",
+          "48h · 2 周 · 1 和 3 个月"
+        ],
+        [
+          "主屏幕小组件",
+          "无需打开即可查看汇率"
+        ],
+        [
+          "设置自定义汇率",
+          "为任意货币对覆盖实时汇率"
+        ],
+        [
+          "批量换算",
+          "输入时整个列表实时更新"
+        ],
+        [
+          "分享 PDF 收据",
+          "将任意换算导出为简洁的 PDF"
+        ]
+      ],
+      "a11yTitle": "应用横幅",
+      "a11yClose": "关闭应用横幅",
+      "a11yIcon": "应用图标",
+      "a11yShot": "应用截图"
+    },
+    "zh-Hant": {
+      "eyebrow": "下載我們的<span class=\"hl\">免費</span>應用程式",
+      "appTitle": "貨幣轉換器",
+      "hook": "一鍵計算與換算",
+      "storeSmall": "下載於",
+      "free": "免費",
+      "trust": "免註冊 · 離線可用 · 數秒安裝",
+      "features": [
+        [
+          "即時匯率 · 163+ 種貨幣",
+          "每小時自動重新整理 · 離線可用"
+        ],
+        [
+          "內建計算機",
+          "在同一畫面換算與計算"
+        ],
+        [
+          "歷史匯率圖表",
+          "48h · 2 週 · 1 和 3 個月"
+        ],
+        [
+          "主畫面小工具",
+          "無需開啟即可查看匯率"
+        ],
+        [
+          "設定自訂匯率",
+          "為任意貨幣對覆寫即時匯率"
+        ],
+        [
+          "批次換算",
+          "輸入時整份清單即時更新"
+        ],
+        [
+          "分享 PDF 收據",
+          "將任意換算匯出為簡潔的 PDF"
+        ]
+      ],
+      "a11yTitle": "應用程式橫幅",
+      "a11yClose": "關閉應用程式橫幅",
+      "a11yIcon": "應用程式圖示",
+      "a11yShot": "應用程式截圖"
+    }
+  }
+}
