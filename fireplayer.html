@@ -45,8 +45,8 @@
 	<header class="nav">
 		<div class="container">
 			<a href="index.html" class="brand"><span>jmobbi</span></a>
-			<button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
-			<ul class="nav-links" id="navlinks">
+			<button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
+			<ul class="nav-links" id="navlinks" onclick="if(event.target.closest('a'))this.classList.remove('open')">
 				<li><a href="index.html#apps">Apps</a></li>
 				<li><a href="index.html#features">Why jmobbi</a></li>
 				<li><a href="support.html">Support</a></li>

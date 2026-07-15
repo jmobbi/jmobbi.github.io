@@ -100,7 +100,28 @@ a:hover { color: var(--red-dark); }
 }
 .nav-links a:hover { color: var(--red) !important; }
 .nav .brand { border-bottom: 0 !important; }
-.nav-toggle { display: none; background: none; border: 0; font-size: 1.5rem; color: var(--ink); cursor: pointer; }
+.nav-toggle {
+	display: none;
+	width: 38px; height: 38px;
+	padding: 0;
+	border: 0 !important;
+	box-shadow: none !important;
+	color: var(--ink) !important;
+	border-radius: 9px;
+	cursor: pointer;
+	/* three bars drawn with CSS so it always renders (no glyph/SVG dependency) */
+	background:
+		linear-gradient(var(--ink), var(--ink)) no-repeat center 13px / 19px 2px,
+		linear-gradient(var(--ink), var(--ink)) no-repeat center 18.5px / 19px 2px,
+		linear-gradient(var(--ink), var(--ink)) no-repeat center 24px / 19px 2px !important;
+}
+.nav-toggle:hover {
+	background:
+		linear-gradient(var(--red), var(--red)) no-repeat center 13px / 19px 2px,
+		linear-gradient(var(--red), var(--red)) no-repeat center 18.5px / 19px 2px,
+		linear-gradient(var(--red), var(--red)) no-repeat center 24px / 19px 2px !important;
+}
+.nav-toggle svg { display: none; }
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -449,23 +470,32 @@ a:hover { color: var(--red-dark); }
 	.footer-brand { grid-column: 1 / -1; }
 }
 @media (max-width: 736px) {
+	.nav-toggle { display: flex; }
 	.nav-links {
 		position: fixed;
-		inset: 68px 0 auto 0;
+		top: 68px; left: 0; right: 0;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: stretch;
 		gap: 0;
-		background: #fff;
+		background: rgba(255,255,255,0.98);
+		-webkit-backdrop-filter: saturate(180%) blur(14px);
+		backdrop-filter: saturate(180%) blur(14px);
+		border-top: 1px solid var(--line);
 		border-bottom: 1px solid var(--line);
-		padding: 0.5rem 1.5rem 1rem;
-		box-shadow: var(--shadow-md);
+		padding: 0.35rem 0;
+		box-shadow: 0 18px 42px rgba(76,29,149,0.14);
 		display: none;
 	}
 	.nav-links.open { display: flex; }
 	.nav-links li { width: 100%; }
-	.nav-links a { display: block; padding: 0.85rem 0; width: 100%; }
-	.nav-links li:last-child a { border-bottom: 0; }
-	.nav-toggle { display: block; }
+	.nav-links a {
+		display: block; width: 100%;
+		padding: 0.95rem 1.5rem;
+		font-size: 1.02rem; font-weight: 600;
+		border-bottom: 1px solid rgba(239,230,232,0.7) !important;
+	}
+	.nav-links li:last-child a { border-bottom: 0 !important; }
+	.nav-links a:hover, .nav-links a:active { background: var(--red-tint); color: var(--red) !important; }
 	.section { padding: 3.5rem 0; }
 	.shots img, .shots .screenshot { height: 340px; }
 	.footer-grid { grid-template-columns: 1fr; }
