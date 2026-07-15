@@ -1,286 +1,265 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 
 <head>
-	<title>Jmobbi - Main</title>
+	<title>jmobbi: Cloud Music Players &amp; Handy iOS Utilities</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="twitter:image" content="https://jmobbi.com/images/og-banner.png" />
+	<meta property="og:image" content="https://jmobbi.com/images/og-banner.png" />
+	<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+	<link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
+	<link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="canonical" href="https://jmobbi.com/" />
+	<meta property="og:url" content="https://jmobbi.com/" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="description" content="jmobbi builds fast, privacy-first iOS and Mac apps trusted by over 2 million people, including cloud music players for Dropbox, Google Drive, MEGA, Yandex.Disk and MediaFire, plus a powerful currency converter." />
+	<meta name="keywords" content="cloud music player, Dropbox music player, Google Drive music player, MEGA music player, Yandex Disk player, MediaFire player, currency converter, iOS apps, Mac apps" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="jmobbi: Cloud Music Players & Handy iOS Utilities" />
+	<meta property="og:description" content="Fast, privacy-first iOS and Mac apps trusted by over 2 million people." />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+	<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "Organization", "name": "jmobbi", "url": "https://jmobbi.com/", "logo": "https://jmobbi.com/images/services/google_music_player_1024x1024.png", "email": "support@jmobbi.com" }
+	</script>
+	<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "WebSite", "name": "jmobbi", "url": "https://jmobbi.com/" }
+	</script>
 </head>
-<script>
-	// Function to fetch artwork URL for a specific app ID
-	async function fetchAppIcon(appId) {
-		try {
-			const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
-			const response = await fetch(apiUrl);
-			const data = await response.json();
 
-			if (data.resultCount > 0) {
-				return data.results[0]?.artworkUrl512 || null;
-			}
-		} catch (error) {
-			console.error(`Error fetching app icon for App ID: ${appId}`, error);
-		}
-		return null;
-	}
+<body>
 
-	// Load app icons dynamically
-	document.addEventListener('DOMContentLoaded', () => {
-		// Get all articles with a data-app-id attribute
-		const articles = document.querySelectorAll('article[data-app-id]');
+	<!-- Navbar -->
+	<header class="nav">
+		<div class="container">
+			<a href="index.html" class="brand"><span>jmobbi</span></a>
+			<button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
+			<ul class="nav-links" id="navlinks">
+				<li><a href="index.html#apps">Apps</a></li>
+				<li><a href="index.html#features">Why jmobbi</a></li>
+				<li><a href="support.html">Support</a></li>
+				<li><a href="privacy_policy.html">Privacy</a></li>
+				<li><a href="terms.html">Terms</a></li>
+			</ul>
+		</div>
+	</header>
 
-		articles.forEach(async (article) => {
-			const appId = article.getAttribute('data-app-id');
-			const imgElement = article.querySelector('a.image img');
-
-			if (appId && imgElement) {
-				const artworkUrl = await fetchAppIcon(appId);
-				if (artworkUrl) {
-					imgElement.src = artworkUrl; // Set the app icon
-					imgElement.alt = `App Icon for App ID: ${appId}`;
-				}
-			}
-		});
-	});
-</script>
-
-<body class="is-preload">
-
-	<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Main -->
-		<div id="main">
-			<div class="inner">
-
-				<!-- Header -->
-				<header id="header">
-					<a href="index.html" class="logo"><strong>Jmobbi</strong></a>
-				</header>
-
-				<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h1>Welcome to Jmobbi</h1>
-							<p>Discover why millions of users love our apps</p>
-						</header>
-						<p>
-							At Jmobbi, we create highly optimized apps that are loved and trusted by over 2 million
-							users worldwide.
-							Our organic downloads speak volumes about the quality and value we bring. People rely on our
-							apps every day
-							for their exceptional performance, user-friendly design, and the ability to make life
-							easier.
-						</p>
-					</div>
-
-				</section>
-
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Why Choose Jmobbi Apps?</h2>
-					</header>
-					<div class="features">
-						<!-- Speed Feature -->
-						<article>
-							<span class="icon solid fa-bolt"></span>
-							<div class="content">
-								<h3>Lightning-Fast Performance</h3>
-								<p>
-									Our apps are meticulously optimized to deliver blazing-fast performance.
-									Enjoy smooth transitions, quick loading times, and a responsive experience tailored
-									for your convenience.
-								</p>
-							</div>
-						</article>
-						<!-- User Interface Feature -->
-						<article>
-							<span class="icon solid fa-mobile-alt"></span>
-							<div class="content">
-								<h3>Intuitive User Interface</h3>
-								<p>
-									Experience a clean, simple, and user-friendly design. Every Jmobbi app is built with
-									accessibility and ease of use in mind, ensuring you can focus on what matters most.
-								</p>
-							</div>
-						</article>
-						<!-- Privacy and Safety Feature -->
-						<article>
-							<span class="icon solid fa-shield-alt"></span>
-							<div class="content">
-								<h3>Privacy and Security</h3>
-								<p>
-									Your privacy is our priority. Jmobbi apps are crafted to ensure top-tier security
-									and
-									compliance with the latest privacy standards, giving you peace of mind.
-								</p>
-							</div>
-						</article>
-						<!-- New Technologies Feature -->
-						<article>
-							<span class="icon solid fa-microchip"></span>
-							<div class="content">
-								<h3>Latest Technology Integration</h3>
-								<p>
-									Stay ahead with cutting-edge technology. Our apps are built to leverage the latest
-									advancements,
-									ensuring compatibility and innovation on every platform.
-								</p>
-							</div>
-						</article>
-					</div>
-				</section>
-
-				<!-- Apps Section -->
-				<section>
-					<header class="major">
-						<h2>Our Apps</h2>
-					</header>
-					<div class="posts">
-						<article data-app-id="1212543936">
-							<a href="musicbox.html" class="image"><img
-									src="images/services/dropbox_music_player_1024x1024.png"
-									alt="Musicbox App Icon" /></a>
-							<h3>Musicbox: Music Player for Dropbox</h3>
-							<p>Stream and download your favorite music directly from Dropbox with features like a
-								powerful equalizer, bass booster, and playback speed control. Perfect for offline
-								listening, smart buffering, and managing playlists on devices like Apple TV, Google
-								Chromecast, and Sonos.</p>
-							<ul class="actions">
-								<li><a href="musicbox.html" class="button">Read More</a></li>
-							</ul>
-						</article>
-						<article data-app-id="1159282786">
-							<a href="goplayer.html" class="image"><img
-									src="images/services/google_music_player_1024x1024.png"
-									alt="GoPlayer App Icon" /></a>
-							<h3>GoPlayer: Music Player for Google Drive</h3>
-							<p>Access and enjoy your music from Google Drive with an advanced equalizer, sleep timer,
-								and bookmarks. Download tracks for offline listening and play seamlessly on Apple TV,
-								Chromecast, and Sonos devices with intuitive playlist management.</p>
-							<ul class="actions">
-								<li><a href="goplayer.html" class="button">Read More</a></li>
-							</ul>
-						</article>
-						<article data-app-id="1097961510">
-							<a href="mplayer.html" class="image"><img
-									src="images/services/mega_music_player_1024x1024.png" alt="MPlayer App Icon" /></a>
-							<h3>MPlayer: Music Player for MEGA.NZ</h3>
-							<p>Experience music streaming and downloading from MEGA.NZ with robust features like audio
-								equalizer, bass booster, and smart buffering. Create and manage playlists with ease and
-								enjoy playback on AirPlay, Chromecast, and Sonos systems.</p>
-							<ul class="actions">
-								<li><a href="mplayer.html" class="button">Read More</a></li>
-							</ul>
-						</article>
-						<article data-app-id="1103650450">
-							<a href="yaplayer.html" class="image"><img
-									src="images/services/yandex_music_player_1024x1024.png"
-									alt="YaPlayer App Icon" /></a>
-							<h3>YaPlayer: Music Player for Yandex.Disk</h3>
-							<p>Listen to your music directly from Yandex.Disk with features like audio bookmarks,
-								playlists, and equalizer. Download tracks for offline access and stream seamlessly on
-								Chromecast, AirPlay, and Sonos, ensuring a smooth listening experience everywhere.</p>
-							<ul class="actions">
-								<li><a href="yaplayer.html" class="button">Read More</a></li>
-							</ul>
-						</article>
-						<article data-app-id="1212543917">
-							<a href="fireplayer.html" class="image"><img
-									src="images/services/media_fire_music_player_1024x1024.png"
-									alt="FirePlayer App Icon" /></a>
-							<h3>FirePlayer: Music Player for MediaFire</h3>
-							<p>Stream your music from MediaFire without using device storage. Download songs for offline
-								playback and enjoy advanced features like equalizer, bookmarks, and playlist management.
-								Compatible with Chromecast, AirPlay, and Sonos for a superior listening experience.</p>
-							<ul class="actions">
-								<li><a href="fireplayer.html" class="button">Read More</a></li>
-							</ul>
-						</article>
-						<article data-app-id="6480405624">
-							<a href="exchange.html" class="image"><img
-									src="images/services/exchange_converter_1024x1024.png"
-									alt="Exchange Converter App Icon" /></a>
-							<h3>Exchange Converter Calculator</h3>
-							<p>Your ultimate currency conversion tool, supporting over 160 global currencies with
-								real-time updates. Enjoy offline calculations, batch conversions, and a sleek interface
-								optimized for fast, accurate results. Perfect for travel and financial planning.</p>
-							<ul class="actions">
-								<li><a href="exchange.html" class="button">Read More</a></li>
-							</ul>
-						</article>
-					</div>
-				</section>
-
+	<!-- Hero -->
+	<section class="hero">
+		<div class="container">
+			<h1>Your music &amp; tools,<br />beautifully in the cloud</h1>
+			<p class="lead">
+				jmobbi builds fast, privacy-first apps for iPhone, iPad and Mac, loved and trusted by more than
+				2 million people worldwide. Stream your cloud music libraries, convert currencies on the go, and
+				enjoy a polished experience built around speed, simplicity and security.
+			</p>
+			<div class="hero-actions">
+				<a href="index.html#apps" class="btn btn-primary">Explore our apps</a>
+				<a href="index.html#features" class="btn btn-ghost">Why choose jmobbi</a>
+			</div>
+			<div class="hero-stats">
+				<div><strong>2M+</strong><span>Happy users</span></div>
+				<div><strong>6</strong><span>Apps &amp; counting</span></div>
+				<div><strong>4.5&#9733;</strong><span>Average rating</span></div>
 			</div>
 		</div>
+	</section>
 
-		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
+	<!-- Features -->
+	<section class="section tint" id="features">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Why jmobbi</span>
+				<h2>Built for people who love their music &amp; time</h2>
+				<p>Every jmobbi app is crafted around speed, simplicity, privacy and the latest Apple technology.</p>
+			</div>
+			<div class="feature-grid">
+				<div class="card">
+					<div class="ic icon solid fa-bolt"></div>
+					<h3>Lightning-fast performance</h3>
+					<p>Meticulously optimized for smooth transitions, quick loading and a responsive experience tailored for your convenience.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-mobile-alt"></div>
+					<h3>Intuitive interface</h3>
+					<p>Clean, simple and thoughtfully designed. Built with accessibility and ease of use in mind so you can focus on what matters.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-shield-alt"></div>
+					<h3>Privacy &amp; security</h3>
+					<p>Your privacy comes first. jmobbi apps are crafted for top-tier security and full compliance with the latest privacy standards.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-microchip"></div>
+					<h3>Latest technology</h3>
+					<p>Stay ahead with cutting-edge tech. Our apps leverage the newest advancements for innovation and compatibility on every platform.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-cloud"></div>
+					<h3>Your cloud, your music</h3>
+					<p>Connect the storage you already use, whether Dropbox, Google Drive, MEGA, Yandex.Disk or MediaFire, and stream instantly.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-download"></div>
+					<h3>Offline everywhere</h3>
+					<p>Download tracks for offline listening on flights, commutes and anywhere the signal drops. Your music is always with you.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-				<!-- Menu -->
-				<nav id="menu">
-					<header class="major">
-						<h2>Menu</h2>
-					</header>
+	<!-- Apps -->
+	<section class="section" id="apps">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Our apps</span>
+				<h2>Millions of happy users</h2>
+				<p>Useful media and utility apps for iPhone, iPad and Mac.</p>
+			</div>
+			<div class="app-grid">
+				<a class="app-card" href="musicbox.html" data-app-id="1212543936">
+					<img src="images/services/dropbox_music_player_1024x1024.png" alt="Musicbox App Icon" />
+					<div>
+						<h3>Musicbox for Dropbox</h3>
+						<p>Stream and download your Dropbox music with a powerful equalizer, bass booster and offline listening.</p>
+						<span class="app-link">Learn more</span>
+					</div>
+				</a>
+				<a class="app-card" href="goplayer.html" data-app-id="1159282786">
+					<img src="images/services/google_music_player_1024x1024.png" alt="GoPlayer App Icon" />
+					<div>
+						<h3>GoPlayer for Google Drive</h3>
+						<p>Play your Google Drive music with an advanced equalizer, sleep timer, bookmarks and offline mode.</p>
+						<span class="app-link">Learn more</span>
+					</div>
+				</a>
+				<a class="app-card" href="mplayer.html" data-app-id="1097961510">
+					<img src="images/services/mega_music_player_1024x1024.png" alt="MPlayer App Icon" />
+					<div>
+						<h3>MPlayer for MEGA.NZ</h3>
+						<p>Stream and download music from MEGA.NZ with an equalizer, bass booster and smart buffering.</p>
+						<span class="app-link">Learn more</span>
+					</div>
+				</a>
+				<a class="app-card" href="yaplayer.html" data-app-id="1103650450">
+					<img src="images/services/yandex_music_player_1024x1024.png" alt="YaPlayer App Icon" />
+					<div>
+						<h3>YaPlayer for Yandex.Disk</h3>
+						<p>Listen to your Yandex.Disk music with audio bookmarks, playlists, an equalizer and offline access.</p>
+						<span class="app-link">Learn more</span>
+					</div>
+				</a>
+				<a class="app-card" href="fireplayer.html" data-app-id="1212543917">
+					<img src="images/services/media_fire_music_player_1024x1024.png" alt="FirePlayer App Icon" />
+					<div>
+						<h3>FirePlayer for MediaFire</h3>
+						<p>Stream MediaFire music without using device storage, with an equalizer, bookmarks and playlists.</p>
+						<span class="app-link">Learn more</span>
+					</div>
+				</a>
+				<a class="app-card" href="exchange.html" data-app-id="6480405624">
+					<img src="images/services/exchange_converter_1024x1024.png" alt="Money Currency Converter App Icon" />
+					<div>
+						<h3>Money Currency Converter</h3>
+						<p>Convert 160+ world currencies with real-time rates, offline support and fast batch conversions.</p>
+						<span class="app-link">Learn more</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Reviews -->
+	<section class="section tint" id="reviews">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Loved by users</span>
+				<h2>What people say about jmobbi apps</h2>
+				<p>Real reviews from the App Store across all of our apps.</p>
+			</div>
+			<div class="app-reviews" data-app-id="1212543936,1159282786,1097961510,1103650450,1212543917,6480405624" data-ratings="3,4,5"></div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="section">
+		<div class="container">
+			<div class="cta-band">
+				<h2>Ready to hear your cloud, your way?</h2>
+				<p>Download a jmobbi app free and start streaming your music in under a minute. iPhone, iPad and Mac.</p>
+				<a href="index.html#apps" class="btn btn-white">Browse the apps</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-brand">
+					<a href="index.html" class="brand"><span>jmobbi</span></a>
+					<p>Fast, privacy-first cloud music players and handy utilities for iPhone, iPad and Mac, trusted by over 2 million people.</p>
+				</div>
+				<div class="footer-col">
+					<h4>Apps</h4>
 					<ul>
-						<li><a href="index.html">Homepage</a></li>
-						<li>
-							<span class="opener">Our Apps</span>
-							<ul>
-								<li><a href="musicbox.html">Musicbox</a></li>
-								<li><a href="goplayer.html">GoPlayer</a></li>
-								<li><a href="mplayer.html">MPlayer</a></li>
-								<li><a href="yaplayer.html">YaPlayer</a></li>
-								<li><a href="fireplayer.html">FirePlayer</a></li>
-								<li><a href="exchange.html">Exchange Converter</a></li>
-							</ul>
-						</li>
-						<li><a href="privacy_policy.html">Privacy Policy</a></li>
-						<li><a href="terms.html">Terms and Conditions</a></li>
+						<li><a href="musicbox.html">Musicbox</a></li>
+						<li><a href="goplayer.html">GoPlayer</a></li>
+						<li><a href="mplayer.html">MPlayer</a></li>
+						<li><a href="yaplayer.html">YaPlayer</a></li>
+						<li><a href="fireplayer.html">FirePlayer</a></li>
+						<li><a href="exchange.html">Money Currency Converter</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Company</h4>
+					<ul>
 						<li><a href="support.html">Support</a></li>
+						<li><a href="mailto:support@jmobbi.com">Contact</a></li>
 					</ul>
-				</nav>
-
-
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Get in Touch</h2>
-					</header>
-					<p>If you have any questions, feedback, or need assistance, we're here to help! Feel free to reach
-						out to us via email, and we'll get back to you as soon as possible.</p>
-					<ul class="contact">
-						<li class="icon solid fa-envelope"><a href="mailto:support@jmobbi.com">support@jmobbi.com</a>
-						</li>
+				</div>
+				<div class="footer-col">
+					<h4>Legal</h4>
+					<ul>
+						<li><a href="privacy_policy.html">Privacy Policy</a></li>
+						<li><a href="terms.html">Terms &amp; Conditions</a></li>
 					</ul>
-				</section>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<p class="copyright">&copy; Jmobbi. All rights reserved. Design: <a href="https://html5up.net">HTML5
-							UP</a>.</p>
-				</footer>
-
+				</div>
+			</div>
+			<div class="footer-bottom">
+				&copy; <span id="year">2026</span> jmobbi. All rights reserved.
 			</div>
 		</div>
+	</footer>
 
-	</div>
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		// Load real App Store icons for the app cards
+		async function fetchAppIcon(appId) {
+			try {
+				const res = await fetch(`https://itunes.apple.com/lookup?id=${appId}`);
+				const data = await res.json();
+				if (data.resultCount > 0) return data.results[0]?.artworkUrl512 || null;
+			} catch (e) { /* ignore */ }
+			return null;
+		}
+		document.addEventListener('DOMContentLoaded', () => {
+			document.querySelectorAll('.app-card[data-app-id]').forEach(async (card) => {
+				const appId = card.getAttribute('data-app-id');
+				const img = card.querySelector('img');
+				if (appId && img) {
+					const url = await fetchAppIcon(appId);
+					if (url) img.src = url;
+				}
+			});
+		});
+	</script>
+
+	<script src="assets/js/reviews.js"></script>
 
 </body>
 

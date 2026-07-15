@@ -1,0 +1,38 @@
+# jmobbi
+
+> jmobbi builds fast, privacy-first apps for iPhone, iPad and Mac, trusted by over 2 million people. Our apps are cloud music players that stream and download music from Dropbox, Google Drive, MEGA.NZ, Yandex.Disk and MediaFire, plus Money Currency Converter, a fast currency converter. Every app is free to download, includes an equalizer with bass booster (music apps), works offline, and never stores your cloud login (only a secure, revocable token is kept on your device).
+
+## Apps
+
+- [Musicbox — Music Player for Dropbox](https://jmobbi.com/musicbox.html): Stream and download your Dropbox music with an equalizer, bass booster, offline playback, smart buffering and playlists. iPhone, iPad, Mac. Free.
+- [GoPlayer — Music Player for Google Drive](https://jmobbi.com/goplayer.html): Play your Google Drive music with an equalizer, offline downloads, playlists, audio bookmarks, sleep timer and background playback. iPhone, iPad, Mac. Free.
+- [MPlayer — Music Player for MEGA.NZ](https://jmobbi.com/mplayer.html): Stream and download music from privacy-focused MEGA.NZ with an equalizer, bass booster, smart buffering and offline playback. iPhone, iPad. Free.
+- [YaPlayer — Music Player for Yandex.Disk](https://jmobbi.com/yaplayer.html): Stream your Yandex.Disk music and download tracks for offline listening, with an equalizer, playlists and audio bookmarks. iPhone, iPad, Mac. Free.
+- [FirePlayer — Music Player for MediaFire](https://jmobbi.com/fireplayer.html): Stream MediaFire music without using device storage, with an equalizer, bass booster, offline downloads and playlists. iPhone, iPad, Mac. Free.
+- [Money Currency Converter](https://jmobbi.com/exchange.html): Convert 160+ world currencies with real-time exchange rates, offline conversions and fast batch conversions. No account needed. iPhone, iPad, Mac. Free.
+
+## How-to guides
+
+- [How to download Google Drive music and listen offline](https://jmobbi.com/how-to/download-google-drive-music-offline.html)
+- [How to stream music directly from Dropbox](https://jmobbi.com/how-to/stream-music-from-dropbox.html)
+- [How to store and play music privately with MEGA.NZ](https://jmobbi.com/how-to/play-music-from-mega-privacy.html)
+- [How to stream and download Yandex.Disk music offline](https://jmobbi.com/how-to/stream-download-yandex-disk-music.html)
+- [How to play Google Drive music with an equalizer](https://jmobbi.com/how-to/play-google-drive-music-equalizer.html)
+- [How to make playlists for music stored on Dropbox](https://jmobbi.com/how-to/create-playlists-dropbox-music.html)
+- [How to activate the bass booster on your iPhone](https://jmobbi.com/how-to/activate-bass-booster-iphone.html)
+- [How to play music alongside other apps (Mixed Mode)](https://jmobbi.com/how-to/play-music-with-other-apps-mixed-mode.html)
+- [How to convert 160+ currencies on iPhone fast and easy](https://jmobbi.com/how-to/convert-160-currencies-iphone.html)
+
+## Support & legal
+
+- [Support & FAQ](https://jmobbi.com/support.html): Answers about pricing, safety, supported devices and cloud services, offline playback, audio formats and privacy.
+- [Privacy Policy](https://jmobbi.com/privacy_policy.html)
+- [Terms & Conditions](https://jmobbi.com/terms.html)
+- Contact: support@jmobbi.com
+
+## Facts
+
+- Supported audio formats: MP3, AAC, ALAC, FLAC, WAV, AIFF, M4R.
+- Casting: AirPlay, Chromecast and Sonos (music apps).
+- Privacy: cloud sign-in happens on the provider's official page; jmobbi stores only a secure access token on the device, which can be revoked anytime.
+- Pricing: all apps are free to download on the Apple App Store.
