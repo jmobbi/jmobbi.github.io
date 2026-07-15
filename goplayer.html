@@ -1,282 +1,390 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 
 <head>
-	<title>GoPlayer | Jmobbi</title>
+	<title>GoPlayer: Music Player for Google Drive | jmobbi</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="twitter:image" content="https://jmobbi.com/images/services/google_music_player_1024x1024.png" />
+	<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+	<link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
+	<link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta property="og:image" content="https://jmobbi.com/images/services/google_music_player_1024x1024.png" />
+	<link rel="canonical" href="https://jmobbi.com/goplayer.html" />
+	<meta property="og:url" content="https://jmobbi.com/goplayer.html" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="description" content="GoPlayer streams and downloads your Google Drive music on iPhone, iPad and Mac. Enjoy an audio equalizer with bass booster, offline playback, playlists, audio bookmarks, sleep timer and background play, supporting MP3, FLAC, AAC, M4A, WAV, AIFF and M4R." />
+	<meta name="keywords" content="Google Drive music player, cloud music player, stream Google Drive music, offline music player iOS, FLAC player, equalizer, GoPlayer" />
+	<meta property="og:type" content="product" />
+	<meta property="og:title" content="GoPlayer: Music Player for Google Drive" />
+	<meta property="og:description" content="Stream and download your Google Drive music on iOS and Mac with an equalizer, offline mode, playlists and more." />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "SoftwareApplication",
+		"name": "GoPlayer: Music Player for Google Drive",
+		"operatingSystem": "iOS, macOS",
+		"applicationCategory": "MusicApplication",
+		"url": "https://jmobbi.com/goplayer.html",
+		"downloadUrl": "https://apps.apple.com/app/id1159282786",
+		"image": "https://jmobbi.com/images/services/google_music_player_1024x1024.png",
+		"description": "GoPlayer streams and downloads your Google Drive music on iPhone, iPad and Mac. Enjoy an audio equalizer with bass booster, offline playback, playlists, audio bookmarks, sleep timer and background play, supporting MP3, FLAC, AAC, M4A, WAV, AIFF and M4R.",
+		"offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+		"publisher": { "@type": "Organization", "name": "jmobbi", "url": "https://jmobbi.com/" }
+	}
+	</script>
 </head>
 
-<body class="is-preload">
+<body>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+	<!-- Navbar -->
+	<header class="nav">
+		<div class="container">
+			<a href="index.html" class="brand"><span>jmobbi</span></a>
+			<button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
+			<ul class="nav-links" id="navlinks">
+				<li><a href="index.html#apps">Apps</a></li>
+				<li><a href="index.html#features">Why jmobbi</a></li>
+				<li><a href="support.html">Support</a></li>
+				<li><a href="privacy_policy.html">Privacy</a></li>
+				<li><a href="terms.html">Terms</a></li>
+			</ul>
+		</div>
+	</header>
 
-		<!-- Main -->
-		<div id="main">
-			<div class="inner">
-
-				<!-- Header -->
-				<header id="header">
-					<a href="index.html" class="logo"><strong>Jmobbi</strong></a>
-				</header>
-
-				<!-- Content -->
-				<section>
-					<header class="main">
-						<h1>GoPlayer: Your Cloud Music Companion for iOS and MacOS</h1>
-					</header>
-
-					<div id="app-screenshots" class="screenshots box">
-						<!-- Screenshots will be dynamically loaded here -->
-					</div>
-
-					<script>
-						async function loadScreenshots(appId) {
-							try {
-								// Replace with the correct iTunes API endpoint for the app ID
-								const apiUrl = `https://itunes.apple.com/lookup?id=${appId}`;
-								const response = await fetch(apiUrl);
-								const data = await response.json();
-
-								if (data.resultCount > 0) {
-									const screenshots = data.results[0].screenshotUrls.slice(0, 5); // Get the first 5 screenshots
-									const screenshotContainer = document.getElementById("app-screenshots");
-
-									screenshots.forEach((url) => {
-										const imgElement = document.createElement("img");
-										imgElement.src = url;
-										imgElement.alt = "App Screenshot";
-										imgElement.classList.add("screenshot");
-										screenshotContainer.appendChild(imgElement);
-									});
-								} else {
-									console.error("No results found for the specified app ID.");
-								}
-							} catch (error) {
-								console.error("Error fetching app data:", error);
-							}
-						}
-
-						// Call the function with the specific app ID
-						loadScreenshots(1159282786);
-					</script>
-
-					<style>
-						.screenshots {
-							display: flex;
-							flex-wrap: wrap;
-							gap: 10px;
-							justify-content: center;
-						}
-
-						.screenshot {
-							width: auto;
-							/* Automatically adjusts width to maintain aspect ratio */
-							max-width: 200px;
-							/* Limit the maximum width */
-							max-height: 300px;
-							/* Limit the maximum height */
-							border-radius: 10px;
-							box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-							object-fit: contain;
-							/* Ensures the image fits within the max dimensions without stretching */
-						}
-
-						/* Horizontal scroll for small devices */
-						@media (max-width: 768px) {
-							.screenshots {
-								flex-wrap: nowrap;
-								overflow-x: auto;
-								justify-content: flex-start;
-								padding: 10px;
-								gap: 10px;
-							}
-
-							.screenshot {
-								flex: 0 0 auto;
-								/* Prevent shrinking */
-								max-height: 200px;
-								/* Adjust max height for small devices */
-								max-width: 150px;
-								/* Adjust size for small devices */
-							}
-						}
-					</style>
-
-					<br>
-
-					<p>Introducing GoPlayer, your go-to music app for iOS and macOS, specially designed to seamlessly
-						integrate with Google Drive. Experience a harmonious blend of convenience and audio excellence
-						as you dive into a world of music.</p>
-
-					<h2>Privacy</h2>
-					<p>GoPlayer respects your privacy. Our use and handling of data obtained from Google APIs adhere to
-						<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
-							User Data Policy</a>, including the Limited Use requirements. For more details, please
-						review our <a href="privacy_policy.html">Privacy Policy</a>.
-					</p>
-
-					<h2>Universal Audio Support</h2>
-					<p>GoPlayer is built to handle a wide range of audio formats effortlessly, including MP3, FLAC, AAC,
-						M4A, WAV, AIFF, and M4R. Whether you're streaming, downloading, or organizing, GoPlayer ensures
-						compatibility with all your favorite music files. Enjoy seamless playback without the hassle of
-						converting formats, making it the perfect solution for audiophiles with diverse music libraries.
-					</p>
-
-					<h2>Audio Equalizer with Bass Booster</h2>
-					<p>Enhance your listening experience with GoPlayer's powerful audio equalizer and bass booster.
-						Adjust the sound to your liking with precision controls that let you fine-tune bass, treble, and
-						midrange frequencies. Whether you prefer deep bass for your favorite tracks or a balanced sound
-						for podcasts, GoPlayer adapts to your unique preferences.</p>
-
-					<h2>Offline Mode</h2>
-					<p>Never let poor connectivity interrupt your music. With GoPlayer, you can download your favorite
-						tracks and playlists for offline listening. Perfect for flights, commutes, or any time you're on
-						the go, this feature ensures your music is always within reach, even without an internet
-						connection.</p>
-
-					<h2>Create Playlists</h2>
-					<p>Organize your music your way with GoPlayer’s intuitive playlist creation tools. Quickly group
-						songs by mood, genre, or occasion, and keep your music collection perfectly curated. Whether
-						you're preparing for a workout, a road trip, or a relaxing evening, GoPlayer makes it easy to
-						create and manage playlists tailored to your needs.</p>
-
-					<h2>Music Library</h2>
-					<p>Effortlessly access your entire music collection with GoPlayer's intuitive library interface.
-						Browse by artist, album, or track, and enjoy a seamless experience as you navigate your
-						organized library. The user-friendly design ensures you spend less time searching and more time
-						enjoying your music.</p>
-
-					<h2>Audio Bookmarks</h2>
-					<p>Never lose your place in a podcast or audiobook again. GoPlayer’s audio bookmarks let you mark
-						specific points in a track, so you can easily return to where you left off. This feature is
-						ideal for long-form content, ensuring a smooth and convenient listening experience.</p>
-
-					<h2>Playback Speed Control</h2>
-					<p>Take control of your listening experience with adjustable playback speeds. Slow down tracks to
-						focus on details or speed them up to save time. GoPlayer gives you the flexibility to tailor
-						your audio to your specific preferences, making it perfect for podcasts, audiobooks, and music
-						alike.</p>
-
-					<h2>Sleep Timer</h2>
-					<p>Drift off to sleep with your favorite tunes using GoPlayer's sleep timer. Set a timer, and the
-						app will automatically stop playback when it reaches the end. It's perfect for winding down at
-						night, ensuring a peaceful transition to sleep while saving battery life.</p>
-
-					<h2>Background Playback</h2>
-					<p>Keep your music playing, no matter what you’re doing. With GoPlayer, you can enjoy uninterrupted
-						playback while using other apps or even when your device is locked. Stay connected to your
-						favorite tracks, podcasts, or audiobooks without missing a beat.</p>
-
-					<h2>File Manager</h2>
-					<p>Stay organized with GoPlayer’s integrated file manager. Quickly locate, move, and manage your
-						audio files directly within the app. The streamlined interface makes it easy to keep your music
-						files neatly arranged, saving you time and effort.</p>
-
-					<h2>Advanced Search</h2>
-					<p>Find exactly what you’re looking for with GoPlayer's advanced search feature. Whether you’re
-						searching for a specific track, artist, or album, the robust search tool delivers instant
-						results, making it easier than ever to locate your music.</p>
-
-					<h2>Universal App</h2>
-					<p>GoPlayer is designed for both iOS and macOS, offering a seamless music experience across devices.
-						Enjoy the convenience of cloud integration with Google Drive, allowing you to access your music
-						anytime, anywhere. It’s your music, your way.</p>
-
-					<h2>Download Now</h2>
-					<p>Unlock the ultimate combination of cloud convenience and powerful audio features with GoPlayer.
-						Download the app today and transform the way you experience your music. With GoPlayer, it’s
-						never been easier to enjoy your favorite tracks, wherever you are.</p>
-
-					<ul class="actions">
-						<li>
-							<!-- Button for iOS App Store -->
-							<a href="https://apps.apple.com/app/id1159282786" class="button primary icon fa-download">
-								Download for iOS
-							</a>
-						</li>
-
-						<li>
-							<!-- Button for Mac App Store -->
-							<a href="https://apps.apple.com/app/id6464165736" class="button primary icon fa-download">
-								Download for Mac
-							</a>
-						</li>
-					</ul>
-
-					<br>
-
-				</section>
-
+	<!-- Hero -->
+	<section class="hero">
+		<div class="container">
+			<img id="app-icon" class="app-icon" src="images/services/google_music_player_1024x1024.png" alt="GoPlayer app icon" />
+			<h1>GoPlayer for Google Drive</h1>
+			<p class="lead">
+				Your cloud music companion for iPhone, iPad and Mac. Stream and download your Google Drive music with a
+				powerful equalizer, offline playback, playlists and more, for a seamless blend of convenience and audio excellence.
+			</p>
+			<div class="hero-actions">
+				<a href="https://apps.apple.com/app/id1159282786" class="btn btn-primary">Download for iOS</a>
+				<a href="https://apps.apple.com/app/id6464165736" class="btn btn-ghost">Download for Mac</a>
 			</div>
 		</div>
+	</section>
 
-		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
+	<!-- Screenshots -->
+	<section class="section">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Take a look</span>
+				<h2>Designed to feel right at home on iOS</h2>
+				<p>A clean, native experience for browsing, streaming and organizing your Google Drive music.</p>
+			</div>
+			<div class="shots" id="app-screenshots" data-app-id="1159282786"></div>
+		</div>
+	</section>
 
-				<!-- Menu -->
-				<nav id="menu">
-					<header class="major">
-						<h2>Menu</h2>
-					</header>
+	<!-- Overview -->
+	<section class="section tint">
+		<div class="container narrow prose">
+			<h2>Stream your Google Drive music, beautifully</h2>
+			<p>GoPlayer is the effortless way to enjoy the music you keep in Google Drive. Browse your library, stream
+				instantly, download for offline listening, and fine-tune every track with a professional-grade equalizer, all wrapped in a fast, intuitive interface built for Apple devices.</p>
+			<h2>Privacy first</h2>
+			<p>GoPlayer respects your privacy. Our use and handling of data obtained from Google APIs adheres to the
+				<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+				Policy</a>, including the Limited Use requirements. For more details, please review our
+				<a href="privacy_policy.html">Privacy Policy</a>.</p>
+		</div>
+	</section>
+
+	<!-- Features -->
+	<section class="section" id="features">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Features</span>
+				<h2>Everything you need in a cloud music player</h2>
+				<p>Powerful audio tools and thoughtful conveniences, all in one beautifully simple app.</p>
+			</div>
+			<div class="feature-grid">
+				<div class="card">
+					<div class="ic icon solid fa-music"></div>
+					<h3>Universal audio support</h3>
+					<p>Play MP3, FLAC, AAC, M4A, WAV, AIFF and M4R with no conversion, so they are perfect for diverse music libraries.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-sliders-h"></div>
+					<h3>Equalizer &amp; bass booster</h3>
+					<p>Fine-tune bass, treble and midrange with precise controls, plus a powerful bass booster for richer sound.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-download"></div>
+					<h3>Offline mode</h3>
+					<p>Download tracks and playlists for offline listening on flights, commutes and anywhere without signal.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-list"></div>
+					<h3>Create playlists</h3>
+					<p>Group songs by mood, genre or occasion and keep your collection perfectly curated.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-compact-disc"></div>
+					<h3>Music library</h3>
+					<p>Browse by artist, album or track with an organized, user-friendly library that keeps music at your fingertips.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-bookmark"></div>
+					<h3>Audio bookmarks</h3>
+					<p>Mark spots in podcasts and audiobooks and return exactly where you left off, every time.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-tachometer-alt"></div>
+					<h3>Playback speed control</h3>
+					<p>Slow tracks down to catch details or speed them up to save time, ideal for podcasts and audiobooks.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-moon"></div>
+					<h3>Sleep timer</h3>
+					<p>Drift off to your favorite tunes and let GoPlayer stop playback automatically while saving battery.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-headphones"></div>
+					<h3>Background playback</h3>
+					<p>Keep listening while using other apps or when your device is locked, without missing a beat.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-folder-open"></div>
+					<h3>File manager</h3>
+					<p>Locate, move and manage your audio files right inside the app with a streamlined interface.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-search"></div>
+					<h3>Advanced search</h3>
+					<p>Find any track, artist or album instantly with a fast, powerful search built for large libraries.</p>
+				</div>
+				<div class="card">
+					<div class="ic icon solid fa-laptop"></div>
+					<h3>Universal app</h3>
+					<p>One seamless experience across iPhone, iPad and Mac, with your Google Drive music everywhere you go.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Reviews -->
+	<section class="section tint" id="reviews">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Loved by listeners</span>
+				<h2>What users are saying</h2>
+				<p>Real reviews from the App Store.</p>
+			</div>
+			<div class="app-reviews" data-app-id="1159282786" data-ratings="3,4,5"></div>
+		</div>
+	</section>
+
+	<!-- FAQ -->
+	<section class="section">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">FAQ</span>
+				<h2>Frequently asked questions</h2>
+			</div>
+			<div class="faq">
+				<details>
+					<summary>Is GoPlayer free to download?</summary>
+					<p>Yes. GoPlayer is completely free to download from the App Store and works on iPhone, iPad and Mac.</p>
+				</details>
+				<details>
+					<summary>What is GoPlayer?</summary>
+					<p>GoPlayer is a music player that streams and downloads the songs you keep in Google Drive. You can listen offline, build playlists and shape your sound with the built-in equalizer, while your library is neatly organized by artist, album, genre and composer. It also supports gapless playback, crossfade and casting to Chromecast or AirPlay.</p>
+				</details>
+				<details>
+					<summary>How does GoPlayer work?</summary>
+					<p>Once you connect your Google Drive account, GoPlayer lets you stream tracks instantly or download them for offline listening. It plays a wide range of formats, lets you create playlists, fine-tune audio through the equalizer, cast to your speakers or TV, and even import local files stored on your device.</p>
+				</details>
+				<details>
+					<summary>Is GoPlayer safe to use?</summary>
+					<p>Yes. GoPlayer relies on secure SDKs and encrypted connections, and it never stores your account credentials. Sign-in happens on Google's own official pages, and the app keeps only a secure authorization token on your device. You can revoke that token at any time from your Google account in any web browser. Downloaded music lives in the app's Documents folder and can be removed with a file manager, and disconnecting the account or uninstalling the app clears the tokens and downloads.</p>
+				</details>
+				<details>
+					<summary>Does GoPlayer keep my data private?</summary>
+					<p>Yes. Any data obtained through Google APIs is handled in line with the Google API Services User Data Policy, including its Limited Use requirements. You can read the full details in our <a href="privacy_policy.html">Privacy Policy</a>.</p>
+				</details>
+				<details>
+					<summary>Which audio formats does GoPlayer support?</summary>
+					<p>GoPlayer plays MP3, AAC, ALAC, FLAC, WAV, AIFF and M4R with no conversion needed.</p>
+				</details>
+				<details>
+					<summary>How do I create a playlist in GoPlayer?</summary>
+					<ol>
+						<li>Go to the Playlists tab.</li>
+						<li>Tap the "+" button, or tap "..." and choose New Playlist.</li>
+						<li>Enter a name for your playlist.</li>
+						<li>Tap Save.</li>
+						<li>Select the tracks you want to include and confirm.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I add songs to a playlist?</summary>
+					<ol>
+						<li>Open the playlist you want to update.</li>
+						<li>Tap the "..." button.</li>
+						<li>Choose Add Songs.</li>
+						<li>Select the tracks you want and tap Done.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I change the order of songs in a playlist?</summary>
+					<ol>
+						<li>Go to Playlists and open the playlist.</li>
+						<li>Tap the "..." button and choose Edit Playlist.</li>
+						<li>Drag tracks to reorder them, or use the sort option to arrange them automatically.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I download music for offline playback?</summary>
+					<ol>
+						<li>Connect your Google Drive account from the Network tab.</li>
+						<li>Open the folder that holds your music.</li>
+						<li>Tap the "..." button and choose Select.</li>
+						<li>Pick the tracks you want and tap Download.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I play audio files directly from Google Drive?</summary>
+					<ol>
+						<li>Open the Network tab and connect your Google Drive account.</li>
+						<li>Browse into the folder that contains your songs.</li>
+						<li>Tap a file to add it to the queue and start playback.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I manage files in Google Drive?</summary>
+					<ol>
+						<li>Open the Network tab and connect to Google Drive.</li>
+						<li>Tap the "..." button to select files.</li>
+						<li>From there you can rename, move, delete or download the selected items.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I use the equalizer?</summary>
+					<ol>
+						<li>Open the Audio Player.</li>
+						<li>Tap the Equalizer icon.</li>
+						<li>Switch the equalizer on.</li>
+						<li>Choose a ready-made preset or move the sliders to create your own custom sound.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I stream music to Chromecast or AirPlay?</summary>
+					<ol>
+						<li>Open the Audio Player.</li>
+						<li>Tap the Audio Speaker icon.</li>
+						<li>Select your Chromecast or AirPlay device from the list.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I enable the Sleep Timer?</summary>
+					<ol>
+						<li>Open Settings.</li>
+						<li>Go to Audio Player.</li>
+						<li>Tap Sleep Timer and choose your preferred interval.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I configure gapless playback?</summary>
+					<p>Open Settings, go to Audio Player and switch on Gapless Playback. Please note that gapless support depends on your device and iOS version.</p>
+				</details>
+				<details>
+					<summary>How can I resume a playlist where I left off?</summary>
+					<p>Open Settings, go to Audio Player and turn on Save Audio Player State. After that, you can tap Continue Playback to pick up right where you stopped.</p>
+				</details>
+				<details>
+					<summary>How do I transfer music from my computer?</summary>
+					<p>You have two options. Use Wi-Fi Drive to move files over the same Wi-Fi network, or transfer them through iTunes or Finder File Sharing when your device is connected to your computer.</p>
+				</details>
+				<details>
+					<summary>How do I use Wi-Fi Drive to transfer files?</summary>
+					<ol>
+						<li>Open the Network tab and choose Computer.</li>
+						<li>Select Connect using Wi-Fi and enable it.</li>
+						<li>Open the shown URL in a browser on your desktop.</li>
+						<li>Drag and drop your files into the browser window.</li>
+						<li>When finished, tap Stop Wi-Fi Drive.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How do I move my existing music library to Google Drive?</summary>
+					<ol>
+						<li>Sign up for a Google Drive account.</li>
+						<li>Install the Google Drive desktop app on your computer.</li>
+						<li>Upload your music files to Google Drive.</li>
+						<li>Sign in to that same account in GoPlayer to access your library.</li>
+					</ol>
+				</details>
+				<details>
+					<summary>How can I delete my music library?</summary>
+					<p>Open Settings, go to Music Library and tap Delete Music Library. This only clears the local database inside GoPlayer; it does not touch your files in Google Drive or any music you have already downloaded.</p>
+				</details>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="section tint">
+		<div class="container">
+			<div class="cta-band">
+				<h2>Ready to hear your Google Drive music your way?</h2>
+				<p>Download GoPlayer free and start streaming in under a minute. iPhone, iPad and Mac.</p>
+				<a href="https://apps.apple.com/app/id1159282786" class="btn btn-white">Download for iOS</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-brand">
+					<a href="index.html" class="brand"><span>jmobbi</span></a>
+					<p>Fast, privacy-first cloud music players and handy utilities for iPhone, iPad and Mac, trusted by over 2 million people.</p>
+				</div>
+				<div class="footer-col">
+					<h4>Apps</h4>
 					<ul>
-						<li><a href="index.html">Homepage</a></li>
-						<li>
-							<span class="opener">Our Apps</span>
-							<ul>
-								<li><a href="musicbox.html">Musicbox</a></li>
-								<li><a href="goplayer.html">GoPlayer</a></li>
-								<li><a href="mplayer.html">MPlayer</a></li>
-								<li><a href="yaplayer.html">YaPlayer</a></li>
-								<li><a href="fireplayer.html">FirePlayer</a></li>
-								<li><a href="exchange.html">Exchange Converter</a></li>
-							</ul>
-						</li>
-						<li><a href="privacy_policy.html">Privacy Policy</a></li>
-						<li><a href="terms.html">Terms and Conditions</a></li>
+						<li><a href="musicbox.html">Musicbox</a></li>
+						<li><a href="goplayer.html">GoPlayer</a></li>
+						<li><a href="mplayer.html">MPlayer</a></li>
+						<li><a href="yaplayer.html">YaPlayer</a></li>
+						<li><a href="fireplayer.html">FirePlayer</a></li>
+						<li><a href="exchange.html">Money Currency Converter</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Company</h4>
+					<ul>
 						<li><a href="support.html">Support</a></li>
+						<li><a href="mailto:support@jmobbi.com">Contact</a></li>
 					</ul>
-				</nav>
-
-
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Get in Touch</h2>
-					</header>
-					<p>If you have any questions, feedback, or need assistance, we're here to help! Feel free to reach
-						out to us via email, and we'll get back to you as soon as possible.</p>
-					<ul class="contact">
-						<li class="icon solid fa-envelope"><a href="mailto:support@jmobbi.com">support@jmobbi.com</a>
-						</li>
+				</div>
+				<div class="footer-col">
+					<h4>Legal</h4>
+					<ul>
+						<li><a href="privacy_policy.html">Privacy Policy</a></li>
+						<li><a href="terms.html">Terms &amp; Conditions</a></li>
 					</ul>
-				</section>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<p class="copyright">&copy; Jmobbi. All rights reserved. Design: <a href="https://html5up.net">HTML5
-							UP</a>.</p>
-				</footer>
-
+				</div>
+			</div>
+			<div class="footer-bottom">
+				&copy; <span id="year">2026</span> jmobbi. All rights reserved.
 			</div>
 		</div>
+	</footer>
 
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+	<script src="assets/js/appstore.js"></script>
+	<script src="assets/js/reviews.js"></script>
 
 </body>
 
